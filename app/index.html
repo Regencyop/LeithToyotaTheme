@@ -26,15 +26,16 @@
 	        <login />
 	    </section>
 	    <section ng-show="Four51User.isAuthenticated()" id="content">
-	        <section class="hidden-print">
-	        	<header class="header navbar navbar-inner">
-		        	<branding />
-		            <navigation />
-	            </header>
-	        </section>
-	        <section class="hidden-print">
-	            
-	        </section>
+	        
+        	<header class="header navbar navbar-inner">
+	        	<section class="hidden-print">
+	        		<branding />
+	        	</section>
+	        	<section class="hidden-print">
+	            	<navigation />
+	            </section>
+            </header>
+	        
 	        <section class="container-view">
 				<ng-view autoscroll />
 	        </section>
