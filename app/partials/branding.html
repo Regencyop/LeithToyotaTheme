@@ -1,4 +1,4 @@
-<section class="jumbotron" ng-class="{'active': isActive('catalog')}" ng-show="user.Company.LogoUrl">
+<!--<section class="jumbotron" ng-class="{'active': isActive('catalog')}" ng-show="user.Company.LogoUrl">
     <div class="container">
         <h2 class="thumbnail" ng-show="Four51User.isAuthenticated()">
             <a ng-click="refreshUser()" href="catalog">
@@ -7,6 +7,16 @@
          
             <homemessage />
         </h2>
-        <h1>Test</h1>
+    </div>
+</section>-->
+
+
+<section ng-class="{'active': isActive('catalog')}" ng-show="user.Company.LogoUrl">
+    <div class="logo" ng-show="Four51User.isAuthenticated()">
+        <a ng-click="refreshUser()" href="catalog">
+            <img ng-src="{{user.Company.LogoUrl}}" />
+        </a>
+     
+        <homemessage />
     </div>
 </section>
