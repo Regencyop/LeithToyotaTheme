@@ -110,7 +110,7 @@ header .main-nav {
 	bottom: 0;	
 }
 
-header .main-nav > li {
+header .main-nav ul > li {
 	float: right;
 	margin-left: 10px;
 }
