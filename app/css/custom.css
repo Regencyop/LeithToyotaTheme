@@ -71,9 +71,17 @@ header {
 header .logo img {
 	width: 100%;
 	height: auto;
+	transition: all .25s ease-in-out;
 }
 
 header .logo { margin: 20px 0; }
+
+header.shrink .logo img {
+	width: 90%;
+	height: auto;
+}
+
+header.shrink .logo { margin: 10px 0; }
 
 header nav.navbar {
 	min-height: 0;
