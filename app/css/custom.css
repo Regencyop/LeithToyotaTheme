@@ -75,6 +75,19 @@ header .logo img {
 
 header .logo { margin: 20px 0; }
 
+header nav.navbar {
+	min-height: 0;
+}
+
+header nav.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: transparent !important;
+}
+
 .owl-carousel.homeboxes .item img {
     display: block;
     width: 100%;
