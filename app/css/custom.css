@@ -79,7 +79,7 @@ header nav.navbar {
 	min-height: 0;
 }
 
-header nav.navbar-nav > li > a {
+.navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
 }
