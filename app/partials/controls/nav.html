@@ -102,35 +102,26 @@
         
     </nav>
     
-    <nav class="main-nav">
+    <nav class="main-nav pull-right">
         
-        <div class="col-xs-6 pull-right">
-        <form role="search">
-            <div class="view-form-icon">
-                <div class="input-group">
-                    <input type="text" ng-model="searchTerm"  class="form-control" placeholder="{{('Search' | r) + ' ' + ('Products' | r) | xlat}}" autocomplete="off" />
-                    <i class="fa fa-search"></i>
-                    <div class="input-group-btn">
-                        <button type="submit" ng-click="search()" class="btn btn-default">{{'Search' | r | xlat}}</button>
-                    </div>
-                </div>
-            </div>
-        </form>
-        </div>
-        
-        <div class="dropdown pull-right">
-            <button class="btn btn-default dropdown-toggle" type="button" id="categoryTree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            	Order Products
-            	<span class="caret"></span>
-            </button>
-            
-            <div class="dropdown-menu" aria-labelledby="categoryTree">
-    	        <ul class="451qa_topnav">
-    	            <categorytree tree='tree' current='currentCategory' />
-    	        </ul>
-            </div>
-        </div><!--dropdown-->
-        
+        <ul>
+        	<li>Search <i class="fa fa-search"></i></li>
+        	<li>
+		        <div class="dropdown pull-right">
+		            <button class="btn btn-default dropdown-toggle" type="button" id="categoryTree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		            	Order Products
+		            	<span class="caret"></span>
+		            </button>
+		            
+		            <div class="dropdown-menu" aria-labelledby="categoryTree">
+		    	        <ul class="451qa_topnav">
+		    	            <categorytree tree='tree' current='currentCategory' />
+		    	        </ul>
+		            </div>
+		        </div><!--dropdown-->
+			</li>
+		</ul>	
+			        
     </nav><!--main-nav-->
     
 
