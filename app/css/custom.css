@@ -115,6 +115,10 @@ header .main-nav ul li {
 	margin-left: 10px;
 }
 
+header .main-nav ul li .dropdown-menu ul li {
+	float: none;
+}
+
 .owl-carousel.homeboxes .item img {
     display: block;
     width: 100%;
