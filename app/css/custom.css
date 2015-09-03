@@ -87,16 +87,22 @@ header nav.navbar {
 	min-height: 0;
 }
 
-.navbar-nav>li>a {
+header .navbar-nav>li>a {
+	height: auto;
 	padding: 10px 5px;
 	color: #aaa;
 }
 
-.navbar-nav>li>a .badge { background-color: red; }
+header .navbar-nav>li>a .badge { background-color: red; }
 
 
-.nav > li > a:hover, .nav > li > a:focus {
+header .nav > li > a:hover, .nav > li > a:focus {
 	background-color: transparent !important;
+}
+
+header .main-nav li {
+	float: right;
+	margin-left: 10px;
 }
 
 .owl-carousel.homeboxes .item img {
