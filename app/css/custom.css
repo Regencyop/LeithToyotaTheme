@@ -5,12 +5,21 @@ Version: 1.0
 Template: Howdy
 */
 
+
+.content-wrapper {
+	margin: 0 auto;
+	max-width: 1500px;
+	background: #fff;
+	overflow: hidden !important;
+	/* Prevent overflow issues with WOW.js */
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px solid #333 !important;
+  /*border: 1px solid #333 !important;*/
 }
 @media (min-width: 768px) {
   .container {
@@ -38,7 +47,6 @@ Template: Howdy
   margin-right: -10px;
 }
 
-
 body { 
 	background: #fff; 
 }
@@ -48,15 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [class*="col"] {
-  border: 1px solid red;
-}
-
-.content-wrapper {
-	margin: 0 auto;
-	max-width: 1500px;
-	background: #fff;
-	overflow: hidden !important;
-	/* Prevent overflow issues with WOW.js */
+  /*border: 1px solid red;*/
 }
 
 header {
