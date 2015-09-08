@@ -177,10 +177,30 @@ aside.col-collapse { display: none !important; }
 	padding: 0;
 }
 
+.categoryListCustom .categories li {
+	padding: 0 10px;
+    margin: 0 10px 20px 10px;
+    -moz-box-shadow:    0px 3px 40px 0px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0px 3px 40px 0px rgba(0,0,0,.2);
+    box-shadow:         0px 3px 40px 0px rgba(0,0,0,.2);
+}
+
 .categoryListCustom .categories li h5 {
 	margin: 0;
-	padding: 10px;
-	background: red;
+	padding: 0 .6em;
+	color: #fff;
+	font-size: 1.8em;
+	line-height: 48px;
+	text-transform: uppercase;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d41921+0,b4161b+100 */
+	background: #d41921; /* Old browsers */
+	background: -moz-linear-gradient(top,  #d41921 0%, #b4161b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d41921), color-stop(100%,#b4161b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #d41921 0%,#b4161b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d41921', endColorstr='#b4161b',GradientType=0 ); /* IE6-9 */
 }
 
 .categoryListCustom .categories li figure.inner {
