@@ -172,9 +172,23 @@ aside.col-collapse { display: none !important; }
 
 /* Category panels */
 
-.panel .panel-heading .panel-title {
+.panel.panel-default {
+	border: none;
+	padding: 0;
+}
+
+.panel.panel-default .panel-heading {
 	display: none;
 }
+
+.panel-category-list ul li .well {
+	padding: 0;
+}
+
+.panel-category-list ul li a {
+	padding: 0;
+}
+
 
 /* Footer */
 
