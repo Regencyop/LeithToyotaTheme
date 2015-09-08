@@ -170,6 +170,12 @@ nav#451qa_nav_hdr.nav { display: none !important; }
 
 aside.col-collapse { display: none !important; }
 
+/* Category panels */
+
+.panel .panel-heading .panel-title {
+	display: none;
+}
+
 /* Footer */
 
 footer {
