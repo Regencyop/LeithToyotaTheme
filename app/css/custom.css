@@ -172,21 +172,29 @@ aside.col-collapse { display: none !important; }
 
 /* Category panels */
 
-.panel.panel-default {
+.categoryListCustom {
 	border: none;
 	padding: 0;
 }
 
-.panel.panel-default .panel-heading {
+.categoryListCustom .categories li h5 {
+	margin: 0;
+	padding: 10px;
+	background: red;
+}
+
+.categoryListCustom .categories li figure.inner {
+	height: 220px;
+	background-size: cover;
+	background-position: center center;
+}
+
+.categoryListCustom .panel-heading {
 	display: none;
 }
 
-.panel-category-list ul li .well {
-	padding: 0;
-}
-
-.panel-category-list ul li a {
-	padding: 0;
+.categoryListCustom .panel-heading {
+	display: none;
 }
 
 
