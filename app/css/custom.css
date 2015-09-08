@@ -237,11 +237,11 @@ aside.col-collapse { display: none !important; }
 	height: 240px;
 	background-size: auto 102%;
 	background-position: center center;
-	transition: all .25s ease-in-out;
+	transition: all .5s cubic-bezier(0.15, 0.6, 0.51, 0.93);
 }
 
 .categoryListCustom .categories li:hover figure {
-	background-size: auto 112%;
+	background-size: auto 108%;
 }
 
 .categoryListCustom .panel-heading {
@@ -267,4 +267,15 @@ footer {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 	
 }
+
+
+@media only screen and (max-width: 767px) {
+	
+	.categoryListCustom .categories li figure {
+		background-size: cover !important;
+	}
+	
+}
+
+
 
