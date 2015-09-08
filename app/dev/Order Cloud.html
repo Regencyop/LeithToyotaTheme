@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog -->
+<html lang="en" ng-app="451order" ng-controller="Four51Ctrl" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}</style>
+	<!--<base href="/NewLeith/">--><base href=".">
+	<script>var four51IsAnonUser = true;</script>
+<meta name="fragment" content="!">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Order Cloud</title><link rel="stylesheet" href="./Order Cloud_files/RegencyBusinessSolutions.Four51OrderCloud.com.NewLeith.source.css">
+	
+	
+	
+	<link rel="stylesheet" href="./Order Cloud_files/owl.carousel.css">
+	<link rel="stylesheet" href="./Order Cloud_files/custom.css">
+		
+    <link href="./Order Cloud_files/css" rel="stylesheet" type="text/css">
+    <link href="./Order Cloud_files/css(1)" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./Order Cloud_files/animate.min.css">
+    
+<script type="text/javascript" charset="UTF-8" src="./Order Cloud_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./Order Cloud_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./Order Cloud_files/stats.js"></script></head>
+
+<body ng-class="ng-cloak" style="zoom: 1;">
+
+	<section class="content-wrapper">
+	
+	    <section ng-hide="Four51User.isAuthenticated() || isAnon" class="container ng-hide">
+	        <login><div class="login">
+    <div class="order-cloud-image" style="background: url(&#39;css/images/orderCloud.jpg&#39;) center center fixed;"></div>
+    <section class="order-cloud">
+        <div id="login_box">
+            <div id="login_form" class="animated bounceIn">
+                <form class="form-signin ng-pristine ng-valid-match ng-valid ng-valid-required" ng-submit="login()" name="login_form">
+                    <h2 class="animated fadeIn text-center ng-binding"><i class="fa fa-cloud"></i><br>Order Cloud 2.0</h2>
+                    <p id="451qa_msg_login" ng-show="loginMessage" ng-bind-html="loginMessage" class="alert alert-info ng-binding ng-hide"></p>
+                    <div>
+                        <div class="view-form-icon" ng-show="!showEmailHelp &amp;&amp; !PasswordReset">
+                            <div>
+                                <label ng-show="credentials.Username" class="ng-binding ng-hide">Username</label>
+                                <input autofocus="" class="form-control ng-pristine ng-valid" type="text" ng-model="credentials.Username" placeholder="Username" style="">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div ng-show="!PasswordSecurityException">
+                                <label ng-show="credentials.Password" class="ng-binding ng-hide">Password</label>
+                                <input class="form-control ng-pristine ng-valid" type="password" ng-model="credentials.Password" placeholder="Password" style="">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="alert alert-info ng-binding ng-hide" ng-show="showEmailHelp &amp;&amp; (!EmailNotFoundException || !PasswordSecurityException)">
+                                If you would like to be reminded of your Username or have the option to reset your Password, please provide your email address and your log on information will be emailed to you immediately.
+                            </p>
+                            <btn class="btn btn-info btn-block" ng-show="!showEmailHelp &amp;&amp; !PasswordReset &amp;&amp; !EmailNotFoundException &amp;&amp; !PasswordSecurityException" ng-click="showEmailHelp = !showEmailHelp; buttonText = &#39;Submit&#39;">
+                                Need help logging on?
+                            </btn>
+                            <div class="view-form-icon ng-hide" ng-show="showEmailHelp">
+                                <div>
+                                    <label ng-show="credentials.Email" class="ng-binding ng-hide">Email</label>
+                                    <input class="form-control ng-pristine ng-animate ng-valid-add ng-valid ng-valid-add-active ng-valid-email" type="email" ng-model="credentials.Email" placeholder="Email" style="">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                            </div>
+                            <btn class="btn btn-info btn-block ng-hide" ng-show="showEmailHelp" ng-click="showEmailHelp = !showEmailHelp; buttonText = &#39;Logon&#39;" style="">
+                                Return to logon
+                            </btn>
+                        </div>
+                        <div>
+                            <div class="view-form-icon ng-hide" ng-show="PasswordSecurityException">
+                                <div>
+                                    <label ng-show="credentials.CurrentPassword" class="ng-binding ng-hide">Current Password</label>
+                                    <input class="form-control ng-pristine ng-valid" name="current_password" type="password" ng-model="credentials.CurrentPassword" placeholder="Current Password" style="">
+                                    <i class="fa fa-lock"></i>
+                                </div>
+                                <div>
+                                    <label ng-show="credentials.NewPassword" class="ng-binding ng-hide">New Password</label>
+                                    <input class="form-control ng-pristine ng-valid" name="new_password" type="password" ng-model="credentials.NewPassword" placeholder="New Password" style="">
+                                    <i class="fa fa-lock"></i>
+                                </div>
+                                <div>
+                                    <label ng-show="credentials.ConfirmPassword" class="ng-binding ng-hide">Confirm Password</label>
+                                    <input class="form-control ng-pristine ng-animate ng-invalid-remove ng-valid-add ng-invalid-match-remove ng-valid-add-active ng-invalid-remove-active ng-valid ng-invalid-match-remove-active ng-valid-match" name="confirm_password" type="password" ng-model="credentials.ConfirmPassword" placeholder="Confirm Password" ng-match="credentials.NewPassword" style="">
+                                    <i class="fa fa-lock"></i>
+                                    <p class="view-inline-error ng-isolate-scope ng-binding ng-hide" ng-show="login_form.confirm_password.$error.match" title="Password do not match!">Password do not match!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="view-form-icon ng-hide" ng-show="PasswordReset">
+                                <div>
+                                    <label ng-show="credentials.NewPassword" class="ng-binding ng-hide">New Password</label>
+                                    <input class="form-control ng-pristine ng-animate ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-valid-add-active ng-invalid-remove-active ng-valid ng-invalid-required-remove-active ng-valid-required" ng-required="PasswordReset" name="new_password" type="password" ng-model="credentials.NewPassword" placeholder="New Password" style="">
+                                    <i class="fa fa-lock"></i>
+                                </div>
+                                <div>
+                                    <label ng-show="credentials.ConfirmPassword" class="ng-binding ng-hide">Confirm Password</label>
+                                    <input class="form-control ng-pristine ng-animate ng-invalid-match-remove ng-valid-match-add ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-valid-add-active ng-invalid-match-remove-active ng-valid-match ng-valid-match-add-active ng-invalid-remove-active ng-valid ng-invalid-required-remove-active ng-valid-required" ng-required="PasswordReset" name="confirm_password" type="password" ng-model="credentials.ConfirmPassword" placeholder="Confirm Password" ng-match="credentials.NewPassword" style="">
+                                    <i class="fa fa-lock"></i>
+                                    <p class="view-inline-error ng-isolate-scope ng-binding ng-hide" ng-show="login_form.confirm_password.$error.match" title="Password do not match!">Password do not match!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <input ng-disabled="login_form.$invalid" class="btn btn-large btn-primary btn-block" id="451_btn_login" type="submit" value="Logon">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+</login>
+	    </section>
+	    
+	    <section ng-show="Four51User.isAuthenticated()" id="content" class="">
+	        
+        	<header class="navbar-fixed-top shrink">
+        	
+        		<div class="container">
+        			<div class="row">	
+        				
+        				<div class="col-sm-4">
+        	
+				        	<section class="hidden-print">
+				        		<branding>
+
+<section ng-class="{&#39;active&#39;: isActive(&#39;catalog&#39;)}" ng-show="user.Company.LogoUrl" class="active">
+    <div class="logo" ng-show="Four51User.isAuthenticated()">
+        <a ng-click="refreshUser()" href="./Order Cloud_files/Order Cloud.html">
+            <img ng-src="https://www.four51.com/Images/Company/a293b6d0969a490abee8b03911fdbea4.jpg" src="./Order Cloud_files/a293b6d0969a490abee8b03911fdbea4.jpg">
+        </a>
+    </div>
+    <!--<homemessage ></homemessage>-->
+</section></branding>
+				        	</section>
+				        	
+				        </div><!--col-->
+				        
+			        	<section class="hidden-print">
+			        		<navigation>
+
+    <nav tolerance="20" offset="200" class="navbar ng-isolate-scope headroom headroom--not-top headroom--unpinned" role="navigation" headroom="">
+    
+        <ul ng-show="PunchoutSession.PunchOutOperation != &#39;Inspect&#39;" class="nav navbar-nav pull-right">
+            <!--<li class="back animated fadeInLeft" ng-class="{'ng-hide': isActive('catalog')}">
+                <a href back-step class="back">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </li>-->
+            <li class="products active" ng-class="{&#39;active&#39;: isInPath(&#39;catalog&#39;) || isInPath(&#39;product&#39;) || isInPath(&#39;cart/default&#39;) || isInPath(&#39;search&#39;)}">
+                <a id="451qa_home_link" ng-show="Four51User.isAuthenticated()" href="./Order Cloud_files/Order Cloud.html">
+                    <i class="fa fa-home"></i>
+                    <span class="hidden-xs ng-binding">Products</span>
+                </a>
+            </li>
+            <li ng-show="PunchoutSession.ShowOrderStats" class="order ng-hide" ng-class="{&#39;active&#39;: isActive(&#39;order&#39;), &#39;active-xs&#39;: isActive(&#39;favoriteorders&#39;)}">
+                <a id="451qa_order_link" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/order">
+                    <i class="fa fa-clipboard"></i>
+                    <span class="hidden-xs ng-binding">Orders</span>
+                </a>
+            </li>
+            <!-- ngIf: user.Permissions.contains('AdvancedReporting') -->
+
+            <li ng-class="{&#39;active&#39;: isActive([&#39;admin&#39;, &#39;addresses&#39;, &#39;address&#39;, &#39;messages&#39;, &#39;message&#39;, &#39;favoriteorders&#39;])}">
+                <a id="451qa_acct_link" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/admin" class="hidden-md hidden-lg">
+                    <i class="fa fa-cog"></i>
+                    <span class="hidden-xs ng-binding">Account</span>
+                </a>
+            </li>
+			<!-- ngIf: AppConst.debug -->
+            <!-- ngIf: false -->
+            <li class="cart" ng-class="{&#39;active&#39;: isActive([&#39;cart&#39;, &#39;checkout&#39;])}">
+                <a id="451qa_cart_link" ng-show="cartCount &amp;&amp; user.CurrentOrderID" class="cart ng-hide" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/cart" style="">
+                    <span ng-bind="cartCount" class="badge ng-binding"></span>
+                    <i class="fa fa-shopping-cart"></i>
+                    <i class="fa fa-caret-down"></i>
+                </a>
+            </li>
+        </ul>
+        
+    </nav>
+    
+    <nav class="main-nav pull-right">
+        
+        <ul>
+        	<li>
+        		<a href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/search" class="btn btn-link btn-lg">Search <i class="fa fa-search"></i></a>
+        	</li>
+        	<li>
+		        <div class="dropdown pull-right">
+		            <button class="btn btn-link btn-lg dropdown-toggle" type="button" id="categoryTree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		            	Order Products
+		            	<span class="caret"></span>
+		            </button>
+		            
+		            <div class="dropdown-menu" aria-labelledby="categoryTree">
+		    	        <ul class="451qa_topnav">
+		    	            <ul tree="tree" current="currentCategory" class="ng-isolate-scope">
+    <!-- ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{&#39;active&#39;:  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741" ng-bind-html="node.Name" class="ng-binding ng-scope" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741">Business Cards</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+    <!-- ngRepeat: node in tree -->
+</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{&#39;active&#39;:  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-Apparel" ng-bind-html="node.Name" class="ng-binding ng-scope" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-Apparel">Apparel</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+    <!-- ngRepeat: node in tree -->
+</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{&#39;active&#39;:  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-Print" ng-bind-html="node.Name" class="ng-binding ng-scope" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-Print">Print</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+    <!-- ngRepeat: node in tree -->
+</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{&#39;active&#39;:  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-Promo" ng-bind-html="node.Name" class="ng-binding ng-scope" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-Promo">Promo</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+    <!-- ngRepeat: node in tree -->
+</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{&#39;active&#39;:  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-ServiceDept" ng-bind-html="node.Name" class="ng-binding ng-scope" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-ServiceDept">Service Department</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+    <!-- ngRepeat: node in tree -->
+</ul></li><!-- end ngRepeat: node in tree -->
+</ul>
+		    	        </ul>
+		            </div>
+		        </div><!--dropdown-->
+			</li>
+		</ul>	
+			        
+    </nav><!--main-nav-->
+    
+
+</navigation>
+			        	</section>
+				        	
+		        	</div><!--row-->
+		        </div><!--container-->	   
+	            
+            </header>
+	        
+	        
+	        <div class="container-fluid" style="padding: 0;">
+	        
+	        	<div class="owl-carousel homeboxes owl-theme" style="display: block; opacity: 1; margin-top: 85px;">
+	        		
+	        		<div class="owl-wrapper-outer"><div class="owl-wrapper" style="display: block; width: 5092px; left: 0px; transition: all 1000ms ease; transform: translate3d(0px, 0px, 0px);"><div class="owl-item" style="width: 1273px;"><div class="item">
+	        			<a href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-Apparel">
+	        				<img src="./Order Cloud_files/header---apparel.jpg">
+	        			</a>
+	        		</div></div><div class="owl-item" style="width: 1273px;"><div class="item">
+	        			<a href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-Promo">
+	        				<img src="./Order Cloud_files/header---promo.jpg">
+	        			</a>
+	        		</div></div></div></div>
+	        		
+	        		
+	        	<div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div><div class="owl-buttons"><div class="owl-prev">prev</div><div class="owl-next">next</div></div></div></div><!--owl-carousel-->
+	        		
+	        </div><!--container-fluid-->
+	        
+	        
+	        <section class="container">
+				<!-- ngView: undefined --><ng-view autoscroll="" class="ng-scope"><section class="ng-scope">
+    <nav id="451qa_nav_hdr" class="nav">
+        <ul>
+            <li class="hidden-sm hidden-xs">
+                <span ng-click="toggleNav()"><i class="fa fa-bars text-info" ng-class="{ &#39;text-info&#39;: navStatus.visible }"></i></span>
+            </li>
+            <li>
+                <span id="451_lbl_curcat" class="text-primary ng-binding" ng-bind-html="currentCategory.Name || &#39;  Categories&#39;">  Categories</span>
+            </li>
+            <li class="pull-right">
+                <a href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/search">
+                    <span><i class="fa fa-search text-primary"></i></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ngIf: navStatus.visible --><aside class="col-sm-3 col-collapse visible-md visible-lg ng-scope" ng-if="navStatus.visible">
+        <div class="panel panel-default panel-nav">
+            <div class="panel-heading">
+                <h3 class="panel-title ng-binding">
+                    Category List
+                </h3>
+            </div>
+            <nav class="nav 451qa_sidenav panel-body">
+                <ul>
+                    <ul tree="tree" current="currentCategory" class="ng-isolate-scope">
+    <!-- ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{&#39;active&#39;:  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741" ng-bind-html="node.Name" class="ng-binding ng-scope" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741">Business Cards</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+    <!-- ngRepeat: node in tree -->
+</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{&#39;active&#39;:  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-Apparel" ng-bind-html="node.Name" class="ng-binding ng-scope" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-Apparel">Apparel</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+    <!-- ngRepeat: node in tree -->
+</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{&#39;active&#39;:  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-Print" ng-bind-html="node.Name" class="ng-binding ng-scope" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-Print">Print</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+    <!-- ngRepeat: node in tree -->
+</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{&#39;active&#39;:  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-Promo" ng-bind-html="node.Name" class="ng-binding ng-scope" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-Promo">Promo</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+    <!-- ngRepeat: node in tree -->
+</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{&#39;active&#39;:  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-ServiceDept" ng-bind-html="node.Name" class="ng-binding ng-scope" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-ServiceDept">Service Department</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+    <!-- ngRepeat: node in tree -->
+</ul></li><!-- end ngRepeat: node in tree -->
+</ul>
+                </ul>
+            </nav>
+        </div>
+    </aside><!-- end ngIf: navStatus.visible -->
+    <div class="col-collapse col-md-8 col-md-offset-1" ng-class="{ &#39;col-md-8 col-md-offset-1&#39;: navStatus.visible }">
+
+        <categorylistview><div class="panel panel-default" ng-show="currentCategory.SubCategories.length">
+    <div class="panel-heading">
+        <h3 class="panel-title ng-binding">
+            Categories
+        </h3>
+    </div>
+    <div class="well ng-hide" ng-show="productCount &gt; settings.pageSize">
+        <ul class="pagination ng-isolate-scope" page="settings.currentPage" max-size="10" rotate="false" boundary-links="true" total-items="productCount" items-per-page="settings.pageSize" direction-links="true" previous-text="Previous" next-text="Next" first-text="First" last-text="Last">
+  <!-- ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">First</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Previous</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope active"><a ng-click="selectPage(page.number)" class="ng-binding">1</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Next</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Last</a></li><!-- end ngRepeat: page in pages -->
+</ul>
+    </div>
+    <div class="panel-category-list">
+        <loadingindicator ng-show="categoryLoadingIndicator" title="Please wait while we fetch all categories" class="ng-isolate-scope ng-hide"><div class="container col-xs-12 app-loading-indicator-cell">
+    <i class="fa fa-spinner fa-spin"></i>
+    <p><small class="ng-binding">Please wait while we fetch all categories</small></p>
+
+</div></loadingindicator>
+        <nav class="nav 451_lbl_subcatlist">
+            <ul>
+                <!-- ngRepeat: c in currentCategory.SubCategories --><li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ng-scope" ng-repeat="c in currentCategory.SubCategories">
+                    <div class="well">
+                        <a ng-href="catalog/650741" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741">
+                            <figure ng-show="c.Image.URL" class="">
+                                <img class="img-responsive" ng-src="https://www.four51.com/images/category/e45ee05f18a8474db2259888d008d706.jpg" src="./Order Cloud_files/e45ee05f18a8474db2259888d008d706.jpg">
+                            </figure>
+                            <div class="empty ng-hide" ng-show="!c.Image.URL">
+                                <span class="fa empty"><i class="fa fa-camera"></i></span>
+                            </div>
+                            <h5 ng-bind-html="c.Name" class="ng-binding">Business Cards</h5>
+                        </a>
+                    </div>
+                </li><!-- end ngRepeat: c in currentCategory.SubCategories --><li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ng-scope" ng-repeat="c in currentCategory.SubCategories">
+                    <div class="well">
+                        <a ng-href="catalog/650741-Apparel" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-Apparel">
+                            <figure ng-show="c.Image.URL" class="">
+                                <img class="img-responsive" ng-src="https://www.four51.com/images/category/2b63868ea7204cd5a3ee0f8ae7f4d365.jpg" src="./Order Cloud_files/2b63868ea7204cd5a3ee0f8ae7f4d365.jpg">
+                            </figure>
+                            <div class="empty ng-hide" ng-show="!c.Image.URL">
+                                <span class="fa empty"><i class="fa fa-camera"></i></span>
+                            </div>
+                            <h5 ng-bind-html="c.Name" class="ng-binding">Apparel</h5>
+                        </a>
+                    </div>
+                </li><!-- end ngRepeat: c in currentCategory.SubCategories --><li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ng-scope" ng-repeat="c in currentCategory.SubCategories">
+                    <div class="well">
+                        <a ng-href="catalog/650741-Print" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-Print">
+                            <figure ng-show="c.Image.URL" class="">
+                                <img class="img-responsive" ng-src="https://www.four51.com/images/category/94876554e130480da40f2c781a66e19a.jpg" src="./Order Cloud_files/94876554e130480da40f2c781a66e19a.jpg">
+                            </figure>
+                            <div class="empty ng-hide" ng-show="!c.Image.URL">
+                                <span class="fa empty"><i class="fa fa-camera"></i></span>
+                            </div>
+                            <h5 ng-bind-html="c.Name" class="ng-binding">Print</h5>
+                        </a>
+                    </div>
+                </li><!-- end ngRepeat: c in currentCategory.SubCategories --><li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ng-scope" ng-repeat="c in currentCategory.SubCategories">
+                    <div class="well">
+                        <a ng-href="catalog/650741-Promo" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-Promo">
+                            <figure ng-show="c.Image.URL" class="">
+                                <img class="img-responsive" ng-src="https://www.four51.com/images/category/e9df5cb155e04f79a49a28195d603a28.jpg" src="./Order Cloud_files/e9df5cb155e04f79a49a28195d603a28.jpg">
+                            </figure>
+                            <div class="empty ng-hide" ng-show="!c.Image.URL">
+                                <span class="fa empty"><i class="fa fa-camera"></i></span>
+                            </div>
+                            <h5 ng-bind-html="c.Name" class="ng-binding">Promo</h5>
+                        </a>
+                    </div>
+                </li><!-- end ngRepeat: c in currentCategory.SubCategories --><li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ng-scope" ng-repeat="c in currentCategory.SubCategories">
+                    <div class="well">
+                        <a ng-href="catalog/650741-ServiceDept" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/catalog/650741-ServiceDept">
+                            <figure ng-show="c.Image.URL" class="">
+                                <img class="img-responsive" ng-src="https://www.four51.com/images/category/181435b137d9454689b694b7d1aef4eb.jpg" src="./Order Cloud_files/181435b137d9454689b694b7d1aef4eb.jpg">
+                            </figure>
+                            <div class="empty ng-hide" ng-show="!c.Image.URL">
+                                <span class="fa empty"><i class="fa fa-camera"></i></span>
+                            </div>
+                            <h5 ng-bind-html="c.Name" class="ng-binding">Service Department</h5>
+                        </a>
+                    </div>
+                </li><!-- end ngRepeat: c in currentCategory.SubCategories -->
+            </ul>
+        </nav>
+    </div>
+    <div class="well ng-hide" ng-show="productCount &gt; settings.pageSize">
+        <ul class="pagination ng-isolate-scope" page="settings.currentPage" max-size="10" rotate="false" boundary-links="true" total-items="productCount" items-per-page="settings.pageSize" direction-links="true" previous-text="Previous" next-text="Next" first-text="First" last-text="Last">
+  <!-- ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">First</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Previous</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope active"><a ng-click="selectPage(page.number)" class="ng-binding">1</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Next</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Last</a></li><!-- end ngRepeat: page in pages -->
+</ul>
+    </div>
+</div></categorylistview>
+
+		<loadingindicator ng-show="productLoadingIndicator" title="Please wait while we fetch all products" class="ng-isolate-scope ng-hide"><div class="container col-xs-12 app-loading-indicator-cell">
+    <i class="fa fa-spinner fa-spin"></i>
+    <p><small class="ng-binding">Please wait while we fetch all products</small></p>
+
+</div></loadingindicator>
+
+        <productlistview><div class="panel panel-default ng-hide" ng-show="products">
+    <div class="panel-heading">
+        <h3 class="panel-title ng-binding">
+            Products
+        </h3>
+    </div>
+    <div ng-show="productCount &gt; settings.pageSize" class="ng-hide">
+        <ul class="pagination ng-isolate-scope" page="settings.currentPage" max-size="10" rotate="false" boundary-links="true" total-items="productCount" items-per-page="settings.pageSize" direction-links="true" previous-text="Previous" next-text="Next" first-text="First" last-text="Last">
+  <!-- ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">First</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Previous</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope active"><a ng-click="selectPage(page.number)" class="ng-binding">1</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Next</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Last</a></li><!-- end ngRepeat: page in pages -->
+</ul>
+    </div>
+    <div class="panel-product-list ng-hide" ng-show="currentCategory.InteropID">
+        <div ng-show="products" class="alert alert-info text-center hidden-sm hidden-md hidden-lg ng-binding ng-hide">
+            <i class="fa fa-arrow-circle-o-left"></i>
+            Swipe product left for more info
+        </div>
+        <nav class="nav">
+            <loadingindicator ng-show="searchLoading" title="Please wait while we fetch all products" class="ng-isolate-scope ng-hide"><div class="container col-xs-12 app-loading-indicator-cell">
+    <i class="fa fa-spinner fa-spin"></i>
+    <p><small class="ng-binding">Please wait while we fetch all products</small></p>
+
+</div></loadingindicator>
+            <div class="row view-form-icon ng-hide" ng-show="currentCategory.SortOptions.length &gt; 0">
+                <div class="col-xs-9">
+                    <label class="ng-binding">Sort by</label>
+                    <select class="form-control ng-pristine ng-valid" ng-options="option.SortValue as (option.Display | xlat) for option in currentCategory.SortOptions" ng-model="sort"><option value="" class=""></option></select>
+                    <i class="fa fa-sort"></i>
+                </div>
+            </div>
+            <ul>
+                <!-- ngRepeat: product in products | paginate:(settings.currentPage-1) * settings.pageSize | limitTo:settings.pageSize | orderBy:sorter:direction -->
+            </ul>
+        </nav>
+    </div>
+    <div ng-show="productCount &gt; settings.pageSize" class="ng-hide">
+        <ul class="pagination ng-isolate-scope" page="settings.currentPage" max-size="10" rotate="false" boundary-links="true" total-items="productCount" items-per-page="settings.pageSize" direction-links="true" previous-text="Previous" next-text="Next" first-text="First" last-text="Last">
+  <!-- ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">First</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Previous</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope active"><a ng-click="selectPage(page.number)" class="ng-binding">1</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Next</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Last</a></li><!-- end ngRepeat: page in pages -->
+</ul>
+    </div>
+</div></productlistview>
+
+    </div>
+</section></ng-view>
+	        </section>
+	        
+	        <section class="hidden-print">
+	            <!-- ngIf: !user.Permissions.contains('UnBrandedSite') --><copyright ng-if="!user.Permissions.contains(&#39;UnBrandedSite&#39;)" class="ng-scope"><footer class="container-fluid copyright-view">
+
+    <p class="text-center">
+        <a href="http://www.four51.com/" target="_blank">
+            <i class="fa fa-cloud"></i><br>
+            <strong class="ng-binding">Powered by Four51°</strong>
+        </a>
+    </p>
+    <p class="text-center ng-binding">
+        Copyright © 2015 Four51 Inc. All Rights Reserved.<br>
+        <!-- ngIf: !(user.Permissions.contains('HideTerms')) --><span ng-if="!(user.Permissions.contains(&#39;HideTerms&#39;))" class="ng-scope">
+            <a class="btn btn-link btn-sm ng-binding" href="https://regencybusinesssolutions.four51ordercloud.com/NewLeith/conditions">
+                Conditions of Use
+            </a>
+        </span><!-- end ngIf: !(user.Permissions.contains('HideTerms')) -->
+    </p>
+
+</footer>
+</copyright><!-- end ngIf: !user.Permissions.contains('UnBrandedSite') -->
+	        </section>
+	        
+	    </section><!--content-->
+	        
+	</section><!--content-wrapper-->
+
+    <!--<script type="text/javascript" src="//dl1d2m8ri9v3j.cloudfront.net/releases/1.2.4/tracker.js" data-customer="bfec7bded14d43a7ace2697594e1369d"></script>-->
+    <script src="./Order Cloud_files/jquery.min.js" data-group="cdn"></script>
+    
+    <!-- Custom Template Scripts Start -->
+    <script src="./Order Cloud_files/bootstrap.min.js"></script>
+    <script src="./Order Cloud_files/owl.carousel.min.js"></script>
+    <script src="./Order Cloud_files/wow.min.js"></script>
+    <script src="./Order Cloud_files/custom.js"></script>
+    <!-- Custom Template Scripts End -->
+    
+    <script src="./Order Cloud_files/angular.min.js" data-group="cdn"></script>
+    <script src="./Order Cloud_files/angular-sanitize.min.js" data-group="cdn"></script>
+    <script src="./Order Cloud_files/angular-cookies.min.js" data-group="cdn"></script>
+    <script src="./Order Cloud_files/angular-animate.min.js" data-group="cdn"></script>
+    <script src="./Order Cloud_files/angular-resource.min.js" data-group="cdn"></script>
+    <script src="./Order Cloud_files/angular-route.min.js" data-group="cdn"></script>
+    <script src="./Order Cloud_files/angular-touch.min.js" data-group="cdn"></script>
+    <script src="./Order Cloud_files/angular-loader.min.js" data-group="cdn"></script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <script src="./Order Cloud_files/js"></script><script src="./Order Cloud_files/main.js"></script><script src="./Order Cloud_files/places.js"></script>
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	
+    
+    
+    
+    
+    
+    
+	
+	
+    
+	
+	
+	
+	
+	
+    
+    
+    
+
+
+    
+	
+	
+    
+    
+	
+    
+    
+    
+    
+    
+	
+    
+    
+	
+    
+    
+    
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+	
+    
+    
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	
+    
+    
+    
+    
+
+<script type="text/javascript" src="./Order Cloud_files/tracker.js" data-customer="bfec7bded14d43a7ace2697594e1369d"></script><script src="./Order Cloud_files/RegencyBusinessSolutions.Four51OrderCloud.com.NewLeith.resources.js"></script><script type="text/javascript" src="./Order Cloud_files/tracker.js" data-customer="bfec7bded14d43a7ace2697594e1369d"></script><script src="./Order Cloud_files/RegencyBusinessSolutions.Four51OrderCloud.com.NewLeith.source.js"></script>
+
+</body></html>

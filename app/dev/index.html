@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="../css/custom.css" />
 	
     <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
-    <link href='//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/animate.min.css" />
     
 </head>
@@ -29,175 +29,114 @@
 	    <section ng-show="Four51User.isAuthenticated()" id="content">
         	
         	<header class="navbar-fixed-top">
-        		        		
-        		<div class="container">
-		        	<div class="row">	
-		        		
-		        		<div class="col-sm-4">
-		        		
-				        	<section class="hidden-print">
-				        		
-				        		<!-- branding.html View Start-->
-				        		<section ng-class="{'active': isActive('catalog')}" ng-show="user.Company.LogoUrl">
-				        		    <div class="logo" ng-show="Four51User.isAuthenticated()">
-				        		        <a ng-click="refreshUser()" href="catalog">
-				        		            <!--<img ng-src="{{user.Company.LogoUrl}}" />-->
-				        		            <img src="../images/leith-toyota-logo.jpg" alt="" />
-				        		        </a>
-				        		    </div>
-				        		    <homemessage />
-				        		</section>
-				        		<!-- branding.html View End-->
-				        		
-			        		</section><!--hidden-print-->
-		        		
-		        		</div><!--col-->
-		        		
-		        		<div class="col-sm-8">
-		        		
-				        	<section class="hidden-print">
-				        			
-			        			<!-- nav.html View Start-->
-			        	    	<nav tolerance='20' offset='200' class="navbar" role="navigation" headroom>
-			        		        
-			        	            <ul ng-show="PunchoutSession.PunchOutOperation != 'Inspect'" class="nav navbar-nav pull-left">
-			        	                <li class="back animated fadeInLeft" ng-class="{'ng-hide': isActive('catalog')}">
-			        	                    <a href back-step class="back">
-			        	                        <i class="fa fa-arrow-left"></i>
-			        	                    </a>
-			        	                </li>
-			        	                <li class="products" ng-class="{'active': isInPath('catalog') || isInPath('product') || isInPath('cart/default') || isInPath('search')}">
-			        	                    <a id="451qa_home_link" ng-show="Four51User.isAuthenticated()" href="catalog">
-			        	                        <i class="fa fa-home"></i>
-			        	                        <span class="hidden-xs">{{'Products' | rc | xlat}}</span>
-			        	                    </a>
-			        	                </li>
-			        	                <li ng-show="PunchoutSession.ShowOrderStats" class="order" ng-class="{'active': isActive('order'), 'active-xs': isActive('favoriteorders')}">
-			        	                    <a id="451qa_order_link" href="order">
-			        	                        <i class="fa fa-clipboard"></i>
-			        	                        <span class="hidden-xs">{{'Orders' | r | xlat}}</span>
-			        	                    </a>
-			        	                </li>
-			        	                <li class="report" ng-if="user.Permissions.contains('AdvancedReporting')" ng-class="{'active': isActive('reports')}">
-			        	                    <a id="451qa_order_link" href="reports">
-			        	                        <i class="fa fa-bar-chart-o"></i>
-			        	                        <span class="hidden-xs">{{'Reports' | r | xlat}}</span>
-			        	                    </a>
-			        	                </li>
-			        	
-			        	                <li ng-class="{'active': isActive(['admin', 'addresses', 'address', 'messages', 'message', 'favoriteorders'])}">
-			        	                    <a id="451qa_acct_link" href="admin" class="hidden-md hidden-lg">
-			        	                        <i class="fa fa-cog"></i>
-			        	                        <span class="hidden-xs">{{'Account' | r | xlat}}</span>
-			        	                    </a>
-			        	                </li>
-			        					<li ng-if="AppConst.debug">
-			        						<a href="#" ng-click="Clear()">
-			        							<i class="fa fa-archive"></i>
-			        							<span class="text-nav">Clear Cache</span>
-			        						</a>
-			        					</li>
-			        	                <li ng-if="false" class="dropdown admin-user visible-md visible-lg" ng-class="{'active': isActive(['admin', 'addresses', 'address', 'messages', 'message', 'favoriteorders'])}">
-			        	                    <a id="451qa_acct_link2" class="dropdown-toggle" data-toggle="dropdown">
-			        	                        <i class="fa fa-cog"></i>
-			        	                        <span class="hidden-xs">{{'Account' | r | xlat}}</span>
-			        	                        <b class="caret"></b>
-			        	                    </a>
-			        	                    <ul class="dropdown-menu">
-			        	                        <li id="451qa_user_link" ng-show="user.Permissions.contains('ViewSelfAdmin')" class="admin">
-			        	                            <a href="admin">
-			        	                                {{'User Information' | r | xlat}}
-			        	                            </a>
-			        	                        </li>
-			        	                        <li id="451qa_addy_link" ng-show="user.Permissions.contains('CreateShipToAddress') || user.Permissions.contains('CreateBillToAddress')" class="addresses">
-			        	                            <a href="addresses">
-			        	                                {{'Addresses' | r | xlat}}
-			        	                            </a>
-			        	                        </li>
-			        	                        <li id="451qa_mesg_link" ng-show="user.Permissions.contains('ViewMessaging')" class="messages">
-			        	                            <a href="message">
-			        	                                {{'Messages' | r | xlat}}
-			        	                            </a>
-			        	                        </li>
-			        	                        <li class="favorites hidden-xs">
-			        	                            <a id="451qa_fave_link" href="favoriteorders">
-			        	                                {{'Favorites' | r | xlat}}
-			        	                            </a>
-			        	                        </li>
-			        	                        <li id="451qa_mesg_link" ng-show="user.Permissions.contains('ViewContactUs')" class="contactus">
-			        	                            <a href="contactus">
-			        	                                {{'Contact Us' | r | xlat}}
-			        	                            </a>
-			        	                        </li>
-			        	                        <li>
-			        	                            <a href="#" neworder ng-if="user.Permissions.contains('MultipleShoppingCart') && currentOrder" class="neworder" ng-click="newOrderLoadingIndicator = true;startNewOrder()">
-			        	                                {{"Start" | r | xlat}} {{"New" | r | xlat}} {{"Order" | r | xlat}}
-			        	                            </a>
-			        	                        </li>
-			        	                        <li class="divider"></li>
-			        	                        <li ng-show="user.Type!='TempCustomer'" class="logout">
-			        	                            <a href="#"  class="451_btn_logout" ng-click="Logout()">
-			        	                                <i class="fa fa-power-off text-danger"></i>
-			        	                                <span>{{'Log Out' | r | xlat}}</span>
-			        	                            </a>
-			        	                        </li>
-			        	                        <li ng-if="AppConst.debug">
-			        	                            <a href="#" ng-click="Clear()">
-			        	                                <i class="fa fa-archive"></i>
-			        	                                <span class="text-nav">Clear Cache</span>
-			        	                            </a>
-			        	                        </li>
-			        	                    </ul>
-			        	                </li>
-			        	                <li class="cart" ng-class="{'active': isActive(['cart', 'checkout'])}">
-			        	                    <a id="451qa_cart_link" ng-show="cartCount && user.CurrentOrderID" class="cart" href="cart">
-			        	                        <span ng-bind="cartCount" class="badge"></span>
-			        	                        <i class="fa fa-shopping-cart"></i>
-			        	                        <i class="fa fa-caret-down"></i>
-			        	                    </a>
-			        	                </li>
-			        	            </ul>
-			        		    </nav>
-			        		    
-			        		    <nav class="main-nav">
-			        		        
-			        		        <div class="col-xs-6 pull-right">
-			        		        <form role="search">
-			        		            <div class="view-form-icon">
-			        		                <div class="input-group">
-			        		                    <input type="text" ng-model="searchTerm"  class="form-control" placeholder="{{('Search' | r) + ' ' + ('Products' | r) | xlat}}" autocomplete="off" />
-			        		                    <i class="fa fa-search"></i>
-			        		                    <div class="input-group-btn">
-			        		                        <button type="submit" ng-click="search()" class="btn btn-default">{{'Search' | r | xlat}}</button>
-			        		                    </div>
-			        		                </div>
-			        		            </div>
-			        		        </form>
-			        		        </div>
-			        		        
-			        		        <div class="dropdown pull-right">
-				        		        <button class="btn btn-default dropdown-toggle" type="button" id="categoryTree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				        		        	Order Products
-				        		        	<span class="caret"></span>
-				        		        </button>
-				        		        
-				        		        <div class="dropdown-menu" aria-labelledby="categoryTree">
-					        		        <ul class="451qa_topnav">
-					        		            <categorytree tree='tree' current='currentCategory' />
-					        		        </ul>
-				        		        </div>
-			        		        </div><!--dropdown-->
-			        		        
-			        		    </nav><!--main-nav-->
-			        			<!-- nav.html View End-->
-				        	    		
-				        	</section>
-			        	</div><!--col-->
-		        	
-		        	</div><!--row-->
-		        </div><!--container-->	
-	            
-            </header>
+        	        	
+        	        		<div class="container">
+        	        			<div class="row">	
+        	        				
+        	        				<div class="col-sm-4">
+        	        	
+        					        	<section class="hidden-print">
+        					        		<branding>
+        	
+        	<section ng-class="{'active': isActive('catalog')}" ng-show="user.Company.LogoUrl" class="active">
+        	    <div class="logo" ng-show="Four51User.isAuthenticated()">
+        	        <a ng-click="refreshUser()" href="catalog">
+        	            <img ng-src="https://www.four51.com/Images/Company/a293b6d0969a490abee8b03911fdbea4.jpg" src="https://www.four51.com/Images/Company/a293b6d0969a490abee8b03911fdbea4.jpg">
+        	        </a>
+        	    </div>
+        	    <!--<homemessage ></homemessage>-->
+        	</section></branding>
+        					        	</section>
+        					        	
+        					        </div><!--col-->
+        					        
+        				        	<section class="hidden-print">
+        				        		<navigation>
+        	
+        	    <nav tolerance="20" offset="200" class="navbar ng-isolate-scope headroom headroom--pinned headroom--top" role="navigation" headroom="">
+        	    
+        	        <ul ng-show="PunchoutSession.PunchOutOperation != 'Inspect'" class="nav navbar-nav pull-right">
+        	            <!--<li class="back animated fadeInLeft" ng-class="{'ng-hide': isActive('catalog')}">
+        	                <a href back-step class="back">
+        	                    <i class="fa fa-arrow-left"></i>
+        	                </a>
+        	            </li>-->
+        	            <li class="products active" ng-class="{'active': isInPath('catalog') || isInPath('product') || isInPath('cart/default') || isInPath('search')}">
+        	                <a id="451qa_home_link" ng-show="Four51User.isAuthenticated()" href="catalog">
+        	                    <i class="fa fa-home"></i>
+        	                    <span class="hidden-xs ng-binding">Products</span>
+        	                </a>
+        	            </li>
+        	            <li ng-show="PunchoutSession.ShowOrderStats" class="order ng-hide" ng-class="{'active': isActive('order'), 'active-xs': isActive('favoriteorders')}">
+        	                <a id="451qa_order_link" href="order">
+        	                    <i class="fa fa-clipboard"></i>
+        	                    <span class="hidden-xs ng-binding">Orders</span>
+        	                </a>
+        	            </li>
+        	            <!-- ngIf: user.Permissions.contains('AdvancedReporting') -->
+        	
+        	            <li ng-class="{'active': isActive(['admin', 'addresses', 'address', 'messages', 'message', 'favoriteorders'])}">
+        	                <a id="451qa_acct_link" href="admin" class="hidden-md hidden-lg">
+        	                    <i class="fa fa-cog"></i>
+        	                    <span class="hidden-xs ng-binding">Account</span>
+        	                </a>
+        	            </li>
+        				<!-- ngIf: AppConst.debug -->
+        	            <!-- ngIf: false -->
+        	            <li class="cart" ng-class="{'active': isActive(['cart', 'checkout'])}">
+        	                <a id="451qa_cart_link" ng-show="cartCount &amp;&amp; user.CurrentOrderID" class="cart ng-hide" href="cart" style="">
+        	                    <span ng-bind="cartCount" class="badge ng-binding"></span>
+        	                    <i class="fa fa-shopping-cart"></i>
+        	                    <i class="fa fa-caret-down"></i>
+        	                </a>
+        	            </li>
+        	        </ul>
+        	        
+        	    </nav>
+        	    
+        	    <nav class="main-nav pull-right">
+        	        
+        	        <ul>
+        	        	<li>
+        	        		<a href="/NewLeith/search">Search <i class="fa fa-search"></i></a>
+        	        	</li>
+        	        	<li>
+        			            <a href="#" class="dropdown-toggle" type="button" id="categoryTree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        			            	Order Products
+        			            	<span class="caret"></span>
+        			            </a>
+        			            
+        			            <div class="dropdown-menu" aria-labelledby="categoryTree">
+        			    	        <ul class="451qa_topnav">
+        			    	            <ul tree="tree" current="currentCategory" class="ng-isolate-scope">
+        	    <!-- ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{'active':  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741" ng-bind-html="node.Name" class="ng-binding ng-scope" href="catalog/650741">Business Cards</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+        	    <!-- ngRepeat: node in tree -->
+        	</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{'active':  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-Apparel" ng-bind-html="node.Name" class="ng-binding ng-scope" href="catalog/650741-Apparel">Apparel</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+        	    <!-- ngRepeat: node in tree -->
+        	</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{'active':  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-Print" ng-bind-html="node.Name" class="ng-binding ng-scope" href="catalog/650741-Print">Print</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+        	    <!-- ngRepeat: node in tree -->
+        	</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{'active':  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-Promo" ng-bind-html="node.Name" class="ng-binding ng-scope" href="catalog/650741-Promo">Promo</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+        	    <!-- ngRepeat: node in tree -->
+        	</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{'active':  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-ServiceDept" ng-bind-html="node.Name" class="ng-binding ng-scope" href="catalog/650741-ServiceDept">Service Department</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+        	    <!-- ngRepeat: node in tree -->
+        	</ul></li><!-- end ngRepeat: node in tree -->
+        	</ul>
+        			    	        </ul>
+        			            </div>
+
+        				</li>
+        			</ul>	
+        				        
+        	    </nav><!--main-nav-->
+        	    
+        	
+        	</navigation>
+        				        	</section>
+        					        	
+        			        	</div><!--row-->
+        			        </div><!--container-->	   
+        		            
+        	            </header>
 	        
 	        <div class="container-fluid" style="padding: 0;">
 	        

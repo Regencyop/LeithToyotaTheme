@@ -59,8 +59,6 @@ h1, h2, h3, h4, h5, h6 {
   /*border: 1px solid red;*/
 }
 
-/* Header */
-
 header {
 	position: relative;
 	z-index: 100;
@@ -109,16 +107,7 @@ header .nav > li > a:hover, .nav > li > a:focus {
 header .main-nav {
 	position: absolute;
 	right: 0;
-	bottom: 0;
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-}
-
-header .main-nav ul li,
-header .main-nav button {
-	margin: 0;
-	padding: 15px;
-	background: #ddd;
+	bottom: 0;	
 }
 
 header .main-nav ul li {
@@ -129,8 +118,6 @@ header .main-nav ul li {
 header .main-nav ul li .dropdown-menu ul li {
 	float: none;
 }
-
-/* Carousel Images */
 
 .owl-carousel.homeboxes .item img {
     display: block;
@@ -163,14 +150,6 @@ header .main-nav ul li .dropdown-menu ul li {
 .owl-carousel.homeboxes .owl-controls .owl-pagination .owl-page.active {
   background: #888;
 }
-
-#451qa_nav_hdr { display: none !important; }
-
-/* Sidebar */
-
-aside.col-collapse { display: none !important; }
-
-/* Footer */
 
 footer {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,ffffff+43 */
