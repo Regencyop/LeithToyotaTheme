@@ -143,6 +143,13 @@ header .main-nav ul li .dropdown-menu ul li {
     width: 100%;
 }
 
+.owl-carousel.homeboxes .owl-controls {
+	position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+}
+
 .owl-carousel.homeboxes .owl-controls .owl-buttons { display: none; }
 
 .owl-carousel.homeboxes .owl-controls .owl-pagination {
@@ -156,12 +163,13 @@ header .main-nav ul li .dropdown-menu ul li {
   width: 20px;
   height: 20px;
   margin: 0 2px;
+  border: 1px solid #fff;
   border-radius: 50%;
-  background: #ccc;
+  background: transparent;
 }
 
 .owl-carousel.homeboxes .owl-controls .owl-pagination .owl-page.active {
-  background: #888;
+  background: #fff;
 }
 
 nav#451qa_nav_hdr.nav { display: none !important; }
@@ -175,6 +183,13 @@ aside.col-collapse { display: none !important; }
 .categoryListCustom {
 	border: none;
 	padding: 0;
+	background: transparent !important;
+}
+
+.categoryListCustom .panel-category-list {
+	margin-top: -80px;
+	padding: 0;
+	background-color: transparent;
 }
 
 .categoryListCustom .categories li {
