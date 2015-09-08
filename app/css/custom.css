@@ -179,11 +179,18 @@ aside.col-collapse { display: none !important; }
 
 .categoryListCustom .categories li {
 	padding: 0 10px;
-    margin: 0 10px 20px 10px;
-    -moz-box-shadow:    0px 3px 40px 0px rgba(0,0,0,.2);
-    -webkit-box-shadow: 0px 3px 40px 0px rgba(0,0,0,.2);
-    box-shadow:         0px 3px 40px 0px rgba(0,0,0,.2);
+	margin: 0;
+    background-color: transparent !important;
 }
+
+.categoryListCustom .categories li .inner {
+	background: green;
+	-moz-box-shadow:    0px 3px 40px 0px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0px 3px 40px 0px rgba(0,0,0,.2);
+	box-shadow:         0px 3px 40px 0px rgba(0,0,0,.2);
+}
+
+.categoryListCustom .panel-category-list ul li a { padding: 0 !important; }
 
 .categoryListCustom .categories li h5 {
 	margin: 0;
@@ -203,7 +210,7 @@ aside.col-collapse { display: none !important; }
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d41921', endColorstr='#b4161b',GradientType=0 ); /* IE6-9 */
 }
 
-.categoryListCustom .categories li figure.inner {
+.categoryListCustom .categories li figure {
 	height: 220px;
 	background-size: cover;
 	background-position: center center;
