@@ -164,7 +164,7 @@ header .main-nav ul li .dropdown-menu ul li {
   background: #888;
 }
 
-#451qa_nav_hdr { display: none !important; }
+nav#451qa_nav_hdr.nav { display: none !important; }
 
 /* Sidebar */
 
