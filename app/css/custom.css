@@ -71,6 +71,7 @@ header {
 }
 
 header .logo { 
+	width: 380px;
 	margin: 20px 0;
 	position: relative;
 	z-index: 10;
@@ -208,11 +209,11 @@ aside.col-collapse { display: none !important; }
 
 .categoryListCustom .categories li h5 {
 	margin: 0;
-	padding: 0 .6em;
-	text-align: left;
-	color: #fff;
-	font-size: 1.8em;
-	line-height: 48px;
+	padding: .3em .6em;
+    text-align: left;
+    color: #fff;
+    font-size: 1.8em;
+    line-height: 1.2em;
 	transition: all .25s ease-in-out;
 	text-transform: uppercase;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d41921+0,b4161b+100 */
@@ -268,8 +269,12 @@ footer {
 
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
 	
+	header { position: relative !important; }
+	header .logo { width: 300px; }
+	
+	.owl-carousel homeboxes { margin-top: 0px !important; }
 	.owl-carousel.homeboxes .owl-controls { bottom: 20px; }
 	
 	.categoryListCustom .panel-category-list { margin-top: 20px; }
@@ -278,9 +283,11 @@ footer {
 
 @media only screen and (max-width: 767px) {
 	
-	.categoryListCustom .categories li figure {
-		background-size: cover !important;
-	}
+	body { font-size: 13px; }
+	
+	header .logo { width: 260px; }
+	
+	.categoryListCustom .categories li figure { background-size: cover !important; }
 	
 }
 
