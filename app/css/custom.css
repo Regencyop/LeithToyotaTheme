@@ -287,6 +287,8 @@ footer {
 	
 	header .logo { width: 260px; }
 	
+	.owl-pagination { display: none; }
+	
 	.categoryListCustom .categories li figure { background-size: cover !important; }
 	
 }
