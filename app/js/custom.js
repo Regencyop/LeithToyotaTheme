@@ -12,6 +12,13 @@ $(document).ready(function() {
         rewindNav: true
 	});
 	
+	//Mobile Menu Toggle
+	$('.mobile-nav-toggle').click(function(){
+		
+		$(this).toggleClass('active');
+		$('.mobile-menu-wrap').slideToggle(300);
+		
+	});
 	
 });	
 
