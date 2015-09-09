@@ -274,7 +274,7 @@ footer {
 	header { position: relative !important; }
 	header .logo { width: 300px; }
 	
-	.owl-carousel homeboxes { margin-top: 0px !important; }
+	.owl-carousel.homeboxes { margin-top: 0px !important; }
 	.owl-carousel.homeboxes .owl-controls { bottom: 20px; }
 	
 	.categoryListCustom .panel-category-list { margin-top: 20px; }
