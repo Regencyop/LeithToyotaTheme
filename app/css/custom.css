@@ -161,7 +161,6 @@ header .main-nav ul li .dropdown-menu {
 	padding: 0;
     border: none;
     border-radius: 0;
-    background: #000;
 }
 
 header .main-nav ul li .dropdown-menu ul li { float: none; }
