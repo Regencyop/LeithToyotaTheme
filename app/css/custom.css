@@ -70,6 +70,17 @@ header {
 	box-shadow:         0px 3px 40px 0px rgba(0,0,0,.2);
 }
 
+/* Header shrink class after scroll */
+header.shrink .logo { margin: 6px 0; }
+
+header.shrink .logo img {
+	width: 85%;
+	height: auto;
+}
+
+header.shrink .main-nav > ul > li > a,
+header.shrink .main-nav > ul > li button.dropdown-toggle { padding: 6px 12px 16px 12px; }
+
 header .logo { 
 	margin: 20px 0;
 	position: relative;
@@ -79,14 +90,8 @@ header .logo {
 header .logo img {
 	width: 100%;
 	height: auto;
+	min-width: 210px;
 	transition: all .25s ease-in-out;
-}
-
-header.shrink .logo { margin: 6px 0; }
-
-header.shrink .logo img {
-	width: 85%;
-	height: auto;
 }
 
 header nav.navbar {
@@ -100,13 +105,6 @@ header .navbar-nav>li>a {
 }
 
 header .navbar-nav>li>a:hover { color: #777; }
-
-header ul.navbar-nav > li > a:after {
-	content: "|";
-	margin: 0 3px;
-}
-
-header ul.navbar-nav > li:last-child > a:after { content: none; }
 
 header .navbar-nav>li>a .badge { background-color: red; }
 
@@ -166,7 +164,7 @@ header .main-nav ul li .dropdown-menu {
 header .main-nav ul li .dropdown-menu ul li { float: none; }
 header .main-nav ul li .dropdown-menu ul li a {
 	display: block;
-	padding: .5em .8em;
+	padding: .5em 20px;
 	width: 320px;
 	color: #fff;
 	font-size: 1.3em;
@@ -352,10 +350,15 @@ footer {
 	
 	body { font-size: 13px; }
 	
-	header .logo { margin: 20px 0 0 0; }
+	header .logo {
+		display: table-cell;
+	    height: 104px;
+	    vertical-align: middle;
+	}
 	
 	header .mobile-menu-wrap { 
 		display: none;
+		font-family: 'Montserrat', sans-serif;
 		width: 100% !important;
 		background: #d41921; /* Old browsers */
 		background: -moz-linear-gradient(top,  #d41921 0%, #b4161b 100%); /* FF3.6+ */
@@ -380,10 +383,8 @@ footer {
 	    outline: none;
 	    text-align: center;
 	    padding: 9px 10px;
-	    height: 104px;
-	    width: 15%;
-        min-width: 60px;
-        max-width: 90px;
+	    height: 104px; /* .logo must be the same size */
+        width: 70px;
 	    background-color: #ccc;
 	    background-image: none;
 	    border: none;
@@ -409,12 +410,68 @@ footer {
 		margin-bottom: 0;
 		line-height: 10px;
 		height: 5px;
-		margin: 6px 25%;
+		margin: 6px 20%;
 		-moz-box-shadow:     0px 1px 2px 0px rgba(0,0,0,.1);
 		-webkit-box-shadow:  0px 1px 2px 0px rgba(0,0,0,.1);
 		box-shadow:          0px 1px 2px 0px rgba(0,0,0,.1);
 	}
 	
+	/* Mobile Nav */
+	header .main-nav > ul {
+		float: none;
+	}
+	
+	header .main-nav > ul > li {
+		float: none;
+		overflow: hidden; /* Hack to force clearfix */
+	}
+	
+	header .main-nav > ul > li.search { margin: 15px 0 0px 0; }
+	
+	header .main-nav > ul > li > a {
+		color: #fff !important;
+		float: none;
+		text-transform: capitalize;
+		font-size: 17px;
+		padding: 0.3em 20px !important;
+	}
+	
+	header .main-nav > ul > li button.dropdown-toggle { display: none; }
+	
+	header .main-nav > ul > li .dropdown-menu {
+		display: block !important;
+		position: relative;
+	    left: 0;
+	    right: auto;
+	    top: 0;
+	    width: 100%;
+	    background: #000;
+	}
+	
+	header .main-nav ul li .dropdown-menu ul li a {
+		width: 100%;
+		font-size: 1.5em;
+		text-decoration: none !important;
+	}
+	
+	header .main-nav ul li .dropdown-menu ul li a:hover,
+	header .main-nav ul li .dropdown-menu ul li a:active,
+	header .main-nav ul li .dropdown-menu ul li a:focus { opacity: .8; }
+	
+	/* Mobile Sub Nav */
+	header nav.navbar ul { float: none !important; margin: 0 0 15px 0; }
+	header nav.navbar ul li a {
+		color: #fff;
+		font-size: 17px;
+		padding: .3em 20px;
+	}
+	
+	header nav.navbar ul li a:hover,
+	header nav.navbar ul li a:active,
+	header nav.navbar ul li a:focus {
+		color: #fff;
+		text-decoration: underline;
+	}
 	
 	.owl-pagination { display: none; }
 	
@@ -423,4 +480,9 @@ footer {
 }
 
 
-
+@media only screen and (max-width: 600px) {
+	
+	header .logo,
+	header .mobile-nav-toggle { height: 74px; }
+	
+}
