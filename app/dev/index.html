@@ -181,6 +181,212 @@
 	        <section class="container" style="min-height: 400px;">
 	        
 	        	<ng-view autoscroll />
+	        	<section class="ng-scope">
+	        	    <nav id="451qa_nav_hdr" class="nav" style="display: none;">
+	        	        <ul>
+	        	            <li class="hidden-sm hidden-xs">
+	        	                <span ng-click="toggleNav()"><i class="fa fa-bars text-info" ng-class="{ 'text-info': navStatus.visible }"></i></span>
+	        	            </li>
+	        	            <li>
+	        	                <span id="451_lbl_curcat" class="text-primary ng-binding" ng-bind-html="currentCategory.Name || '  Categories'">  Categories</span>
+	        	            </li>
+	        	            <li class="pull-right">
+	        	                <a href="search">
+	        	                    <span><i class="fa fa-search text-primary"></i></span>
+	        	                </a>
+	        	            </li>
+	        	        </ul>
+	        	    </nav>
+	        	    <!-- ngIf: navStatus.visible --><aside class="col-sm-3 col-collapse visible-md visible-lg ng-scope" ng-if="navStatus.visible">
+	        	        <div class="panel panel-default panel-nav">
+	        	            <div class="panel-heading">
+	        	                <h3 class="panel-title ng-binding">
+	        	                    Category List
+	        	                </h3>
+	        	            </div>
+	        	            <nav class="nav 451qa_sidenav panel-body">
+	        	                <ul>
+	        	                    <ul tree="tree" current="currentCategory" class="ng-isolate-scope">
+	        	    <!-- ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{'active':  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741" ng-bind-html="node.Name" class="ng-binding ng-scope" href="catalog/650741">Business Cards</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+	        	    <!-- ngRepeat: node in tree -->
+	        	</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{'active':  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-Apparel" ng-bind-html="node.Name" class="ng-binding ng-scope" href="catalog/650741-Apparel">Apparel</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+	        	    <!-- ngRepeat: node in tree -->
+	        	</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{'active':  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-Print" ng-bind-html="node.Name" class="ng-binding ng-scope" href="catalog/650741-Print">Print</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+	        	    <!-- ngRepeat: node in tree -->
+	        	</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{'active':  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-Promo" ng-bind-html="node.Name" class="ng-binding ng-scope" href="catalog/650741-Promo">Promo</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+	        	    <!-- ngRepeat: node in tree -->
+	        	</ul></li><!-- end ngRepeat: node in tree --><li class="nav 451_cat_item ng-scope ng-isolate-scope" ng-class="{'active':  current.InteropID == node.InteropID}" ng-repeat="node in tree" node="node" current="current"><a ng-href="catalog/650741-ServiceDept" ng-bind-html="node.Name" class="ng-binding ng-scope" href="catalog/650741-ServiceDept">Service Department</a><ul tree="node.SubCategories" current="current" class="ng-isolate-scope">
+	        	    <!-- ngRepeat: node in tree -->
+	        	</ul></li><!-- end ngRepeat: node in tree -->
+	        	</ul>
+	        	                </ul>
+	        	            </nav>
+	        	        </div>
+	        	    </aside><!-- end ngIf: navStatus.visible -->
+	        	    <div class="col-collapse">
+	        	
+	        	        <categorylistview><div class="panel panel-default categoryListCustom" ng-show="currentCategory.SubCategories.length">
+	        	
+	        	    <!--<div class="panel-heading" >
+	        	        <h3 class="panel-title" >
+	        	            {{'Categories' | r | xlat}}
+	        	        </h3>
+	        	    </div>-->
+	        	    
+	        	    <div class="panel-category-list">
+	        	        
+	        	        <nav class="nav 451_lbl_subcatlist">
+	        	            <div class="row">
+	        	                <ul class="categories">
+	        	                    <!-- ngRepeat: c in currentCategory.SubCategories --><li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ng-scope" ng-repeat="c in currentCategory.SubCategories">
+	        	                        
+	        	                        <div class="inner">
+	        	                        
+	        	                            <a ng-href="catalog/650741" href="catalog/650741">
+	        	                                
+	        	                                <h5 ng-bind-html="c.Name" class="ng-binding">Business Cards</h5>
+	        	                                
+	        	                                <figure ng-show="c.Image.URL" style="background-image: url(https://www.four51.com/images/category/e45ee05f18a8474db2259888d008d706.jpg);" class="">
+	        	                                    <!--<img class="img-responsive" ng-src="{{c.Image.URL}}"/>-->
+	        	                                </figure>
+	        	                                
+	        	                                <!--<div class="empty" ng-show="!c.Image.URL">
+	        	                                    <span class="fa empty"><i class="fa fa-camera"></i></span>
+	        	                                </div>-->
+	        	                                
+	        	                            </a>
+	        	                        
+	        	                        </div><!--inner--> 
+	        	                        
+	        	                    </li><!-- end ngRepeat: c in currentCategory.SubCategories --><li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ng-scope" ng-repeat="c in currentCategory.SubCategories">
+	        	                        
+	        	                        <div class="inner">
+	        	                        
+	        	                            <a ng-href="catalog/650741-Apparel" href="catalog/650741-Apparel">
+	        	                                
+	        	                                <h5 ng-bind-html="c.Name" class="ng-binding">Apparel</h5>
+	        	                                
+	        	                                <figure ng-show="c.Image.URL" style="background-image: url(https://www.four51.com/images/category/2b63868ea7204cd5a3ee0f8ae7f4d365.jpg);" class="">
+	        	                                    <!--<img class="img-responsive" ng-src="{{c.Image.URL}}"/>-->
+	        	                                </figure>
+	        	                                
+	        	                                <!--<div class="empty" ng-show="!c.Image.URL">
+	        	                                    <span class="fa empty"><i class="fa fa-camera"></i></span>
+	        	                                </div>-->
+	        	                                
+	        	                            </a>
+	        	                        
+	        	                        </div><!--inner--> 
+	        	                        
+	        	                    </li><!-- end ngRepeat: c in currentCategory.SubCategories --><li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ng-scope" ng-repeat="c in currentCategory.SubCategories">
+	        	                        
+	        	                        <div class="inner">
+	        	                        
+	        	                            <a ng-href="catalog/650741-Print" href="catalog/650741-Print">
+	        	                                
+	        	                                <h5 ng-bind-html="c.Name" class="ng-binding">Print</h5>
+	        	                                
+	        	                                <figure ng-show="c.Image.URL" style="background-image: url(https://www.four51.com/images/category/94876554e130480da40f2c781a66e19a.jpg);" class="">
+	        	                                    <!--<img class="img-responsive" ng-src="{{c.Image.URL}}"/>-->
+	        	                                </figure>
+	        	                                
+	        	                                <!--<div class="empty" ng-show="!c.Image.URL">
+	        	                                    <span class="fa empty"><i class="fa fa-camera"></i></span>
+	        	                                </div>-->
+	        	                                
+	        	                            </a>
+	        	                        
+	        	                        </div><!--inner--> 
+	        	                        
+	        	                    </li><!-- end ngRepeat: c in currentCategory.SubCategories --><li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ng-scope" ng-repeat="c in currentCategory.SubCategories">
+	        	                        
+	        	                        <div class="inner">
+	        	                        
+	        	                            <a ng-href="catalog/650741-Promo" href="catalog/650741-Promo">
+	        	                                
+	        	                                <h5 ng-bind-html="c.Name" class="ng-binding">Promo</h5>
+	        	                                
+	        	                                <figure ng-show="c.Image.URL" style="background-image: url(https://www.four51.com/images/category/e9df5cb155e04f79a49a28195d603a28.jpg);" class="">
+	        	                                    <!--<img class="img-responsive" ng-src="{{c.Image.URL}}"/>-->
+	        	                                </figure>
+	        	                                
+	        	                                <!--<div class="empty" ng-show="!c.Image.URL">
+	        	                                    <span class="fa empty"><i class="fa fa-camera"></i></span>
+	        	                                </div>-->
+	        	                                
+	        	                            </a>
+	        	                        
+	        	                        </div><!--inner--> 
+	        	                        
+	        	                    </li><!-- end ngRepeat: c in currentCategory.SubCategories --><li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ng-scope" ng-repeat="c in currentCategory.SubCategories">
+	        	                        
+	        	                        <div class="inner">
+	        	                        
+	        	                            <a ng-href="catalog/650741-ServiceDept" href="catalog/650741-ServiceDept">
+	        	                                
+	        	                                <h5 ng-bind-html="c.Name" class="ng-binding">Service Department</h5>
+	        	                                
+	        	                                <figure ng-show="c.Image.URL" style="background-image: url(https://www.four51.com/images/category/181435b137d9454689b694b7d1aef4eb.jpg);" class="">
+	        	                                    <!--<img class="img-responsive" ng-src="{{c.Image.URL}}"/>-->
+	        	                                </figure>
+	        	                                
+	        	                                <!--<div class="empty" ng-show="!c.Image.URL">
+	        	                                    <span class="fa empty"><i class="fa fa-camera"></i></span>
+	        	                                </div>-->
+	        	                                
+	        	                            </a>
+	        	                        
+	        	                        </div><!--inner--> 
+	        	                        
+	        	                    </li><!-- end ngRepeat: c in currentCategory.SubCategories -->
+	        	                </ul>
+	        	            </div><!--row-->
+	        	        </nav>
+	        	    </div>
+	        	        
+	        	</div></categorylistview>
+	        	
+	        			
+	        	
+	        	        <productlistview><div class="panel panel-default ng-hide" ng-show="products">
+	        	    <div class="panel-heading">
+	        	        <h3 class="panel-title ng-binding">
+	        	            Products
+	        	        </h3>
+	        	    </div>
+	        	    <div ng-show="productCount > settings.pageSize" class="ng-hide">
+	        	        <ul class="pagination ng-isolate-scope" page="settings.currentPage" max-size="10" rotate="false" boundary-links="true" total-items="productCount" items-per-page="settings.pageSize" direction-links="true" previous-text="Previous" next-text="Next" first-text="First" last-text="Last">
+	        	  <!-- ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">First</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Previous</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope active"><a ng-click="selectPage(page.number)" class="ng-binding">1</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Next</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Last</a></li><!-- end ngRepeat: page in pages -->
+	        	</ul>
+	        	    </div>
+	        	    <div class="panel-product-list ng-hide" ng-show="currentCategory.InteropID">
+	        	        <div ng-show="products" class="alert alert-info text-center hidden-sm hidden-md hidden-lg ng-binding ng-hide">
+	        	            <i class="fa fa-arrow-circle-o-left"></i>
+	        	            Swipe product left for more info
+	        	        </div>
+	        	        <nav class="nav">
+	        	           
+	        	            <div class="row view-form-icon ng-hide" ng-show="currentCategory.SortOptions.length > 0">
+	        	                <div class="col-xs-9">
+	        	                    <label class="ng-binding">Sort by</label>
+	        	                    <select class="form-control ng-pristine ng-valid" ng-options="option.SortValue as (option.Display | xlat) for option in currentCategory.SortOptions" ng-model="sort"><option value="" class=""></option></select>
+	        	                    <i class="fa fa-sort"></i>
+	        	                </div>
+	        	            </div>
+	        	            <ul>
+	        	                <!-- ngRepeat: product in products | paginate:(settings.currentPage-1) * settings.pageSize | limitTo:settings.pageSize | orderBy:sorter:direction -->
+	        	            </ul>
+	        	        </nav>
+	        	    </div>
+	        	    <div ng-show="productCount > settings.pageSize" class="ng-hide">
+	        	        <ul class="pagination ng-isolate-scope" page="settings.currentPage" max-size="10" rotate="false" boundary-links="true" total-items="productCount" items-per-page="settings.pageSize" direction-links="true" previous-text="Previous" next-text="Next" first-text="First" last-text="Last">
+	        	  <!-- ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">First</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Previous</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope active"><a ng-click="selectPage(page.number)" class="ng-binding">1</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Next</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Last</a></li><!-- end ngRepeat: page in pages -->
+	        	</ul>
+	        	    </div>
+	        	</div></productlistview>
+	        	
+	        	    </div>
+	        	</section>
 	        	
 	        </section>
 	        
