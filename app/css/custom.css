@@ -155,10 +155,13 @@ header .main-nav > ul > li button.dropdown-toggle .caret {
 /* Dropdown Products Menu */
 
 header .main-nav ul li .dropdown-menu {
+	left: auto;
+	right: 0;
 	margin: 0;
 	padding: 0;
     border: none;
     border-radius: 0;
+    background: #000;
 }
 
 header .main-nav ul li .dropdown-menu ul li { float: none; }
@@ -169,6 +172,7 @@ header .main-nav ul li .dropdown-menu ul li a {
 	color: #fff;
 	font-size: 1.3em;
 	text-transform: uppercase;
+	text-decoration: none;
 	background: #d41921; /* Old browsers */
 	background: -moz-linear-gradient(top,  #d41921 0%, #b4161b 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d41921), color-stop(100%,#b4161b)); /* Chrome,Safari4+ */
@@ -177,6 +181,12 @@ header .main-nav ul li .dropdown-menu ul li a {
 	background: -ms-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #d41921 0%,#b4161b 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d41921', endColorstr='#b4161b',GradientType=0 ); /* IE6-9 */
+}
+
+header .main-nav ul li .dropdown-menu ul li a:hover { 
+	-moz-box-shadow:    inset 0px -19px 40px 0px rgba(0,0,0,.15);
+	-webkit-box-shadow: inset 0px -19px 40px 0px rgba(0,0,0,.15);
+	box-shadow:         inset 0px -19px 40px 0px rgba(0,0,0,.15);
 }
 
 /* Dropdown Products Menu Open */
@@ -456,7 +466,11 @@ footer {
 	
 	header .main-nav ul li .dropdown-menu ul li a:hover,
 	header .main-nav ul li .dropdown-menu ul li a:active,
-	header .main-nav ul li .dropdown-menu ul li a:focus { opacity: .8; }
+	header .main-nav ul li .dropdown-menu ul li a:focus {
+		-moz-box-shadow:    inset 0px -19px 40px 0px rgba(0,0,0,.15);
+		-webkit-box-shadow: inset 0px -19px 40px 0px rgba(0,0,0,.15);
+		box-shadow:         inset 0px -19px 40px 0px rgba(0,0,0,.15);
+	}
 	
 	/* Mobile Sub Nav */
 	header nav.navbar ul { float: none !important; margin: 0 0 15px 0; }
