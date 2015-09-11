@@ -87,13 +87,9 @@
 	        		
 	        </div><!--container-fluid-->
 	        
-	        {{ scope.carousel }}
-	        
-	        <div ng-show="routeParam.page='category'">This is the extra div that only exists on home page. But it's outside the ng-view scope.</div>
-	        
-	        <section class="container">
+	        <!--<section class="container"> //////////////////////////////////-->
 				<ng-view autoscroll />
-	        </section>
+	        <!--</section> //////////////////////////////////-->
 	        
 	        <section class="hidden-print">
 	            <copyright ng-if="!user.Permissions.contains('UnBrandedSite')" />

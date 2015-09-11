@@ -8,9 +8,7 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 	$scope.trusted = function(d){
 		if(d) return $sce.trustAsHtml(d);
 	}
-	
-	$scope.carousel = true;
-	
+
 	function _search() {
 		$scope.searchLoading = true;
 		Product.search($routeParams.categoryInteropID, null, null, function (products, count) {
@@ -54,7 +52,4 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 			$scope.sorter = s.replace(' DESC', "");
 		$scope.direction = s.indexOf('DESC') > -1;
 	});
-	
-	console.log($scope);
-	
 }]);
