@@ -67,30 +67,9 @@
 	            
             </header>
 	        
+	        <!-- Carousel is located in categoryView.html -->
 	        
-	        <div class="container-fluid" style="padding: 0;">
-	        
-	        	<div class="owl-carousel homeboxes">
-	        		
-	        		<div class="item">
-	        			<a href="/NewLeith/catalog/650741-Apparel">
-	        				<img src="images/header---apparel.jpg">
-	        			</a>
-	        		</div>
-	        		<div class="item">
-	        			<a href="/NewLeith/catalog/650741-Promo">
-	        				<img src="images/header---promo.jpg">
-	        			</a>
-	        		</div>
-	        		
-	        	</div><!--owl-carousel-->
-	        		
-	        </div><!--container-fluid-->
-	        
-	        
-	        <section class="container">
-				<ng-view autoscroll />
-	        </section>
+			<ng-view autoscroll />
 	        
 	        <section class="hidden-print">
 	            <copyright ng-if="!user.Permissions.contains('UnBrandedSite')" />

@@ -1,40 +1,63 @@
-<section>
-    <nav id="451qa_nav_hdr" class="nav" style="display: none;">
-        <ul>
-            <li class="hidden-sm hidden-xs">
-                <span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i></span>
-            </li>
-            <li>
-                <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
-            </li>
-            <li class="pull-right">
-                <a href="search">
-                    <span><i class="fa fa-search text-primary"></i></span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <aside class="col-sm-3 col-collapse visible-md visible-lg" ng-if="navStatus.visible">
-        <div class="panel panel-default panel-nav">
-            <div class="panel-heading">
-                <h3 class="panel-title">
-                    {{'Category List' | r | xlat}}
-                </h3>
-            </div>
-            <nav class="nav 451qa_sidenav panel-body">
-                <ul>
-                    <categorytree tree='tree' current='currentCategory' />
-                </ul>
-            </nav>
-        </div>
-    </aside>
-    <div class="col-collapse">
+<div class="container-fluid" style="padding: 0;">
 
-        <categorylistview></categorylistview>
+	<div class="owl-carousel homeboxes">
+		
+		<div class="item">
+			<a href="/NewLeith/catalog/650741-Apparel">
+				<img src="images/header---apparel.jpg">
+			</a>
+		</div>
+		<div class="item">
+			<a href="/NewLeith/catalog/650741-Promo">
+				<img src="images/header---promo.jpg">
+			</a>
+		</div>
+		
+	</div><!--owl-carousel-->
+		
+</div><!--container-fluid-->
 
-		<loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}"/>
+<section class="container">
 
-        <productlistview></productlistview>
+	<section>
+	    <nav id="451qa_nav_hdr" class="nav" style="display: none;">
+	        <ul>
+	            <li class="hidden-sm hidden-xs">
+	                <span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i></span>
+	            </li>
+	            <li>
+	                <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
+	            </li>
+	            <li class="pull-right">
+	                <a href="search">
+	                    <span><i class="fa fa-search text-primary"></i></span>
+	                </a>
+	            </li>
+	        </ul>
+	    </nav>
+	    <aside class="col-sm-3 col-collapse visible-md visible-lg" ng-if="navStatus.visible">
+	        <div class="panel panel-default panel-nav">
+	            <div class="panel-heading">
+	                <h3 class="panel-title">
+	                    {{'Category List' | r | xlat}}
+	                </h3>
+	            </div>
+	            <nav class="nav 451qa_sidenav panel-body">
+	                <ul>
+	                    <categorytree tree='tree' current='currentCategory' />
+	                </ul>
+	            </nav>
+	        </div>
+	    </aside>
+	    <div class="col-collapse">
+	
+	        <categorylistview></categorylistview>
+	
+			<loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}"/>
+	
+	        <productlistview></productlistview>
+	
+	    </div>
+	</section>
 
-    </div>
-</section>
+</section><!--container-->
