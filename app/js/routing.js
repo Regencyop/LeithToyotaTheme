@@ -9,6 +9,10 @@ four51.app.config(['$routeProvider', '$locationProvider', function($routeProvide
 		return 'specform.hcf?id=' + routeParams.productInteropID;
 	}
 
+	$rootScope.$on('$routeChangeSuccess', function() {
+	      $rootScope.showSection = $location.path() !== "/";
+	  });
+
 	$routeProvider.
 		when('/listOrders', { templateUrl: 'partials/listOrders.html', controller: 'ListOrdersCtrl' }).
 		when('/orderdetails/:orderid', {templateUrl: 'partials/orderDetails.html', controller: 'OrderDetailsCtrl'}).
