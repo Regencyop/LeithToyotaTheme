@@ -69,7 +69,9 @@
 	        
 	        <!-- Carousel is located in categoryView.html -->
 	        
-			<ng-view autoscroll />
+	        <section class="container">
+				<ng-view autoscroll />
+	        </section>
 	        
 	        <section class="hidden-print">
 	            <copyright ng-if="!user.Permissions.contains('UnBrandedSite')" />
