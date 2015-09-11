@@ -324,13 +324,13 @@ aside.col-collapse { display: none !important; }
 
 .categoryListCustom .categories li figure {
 	height: 240px;
-	background-size: auto 102%;
+	background-size: 100% auto;
 	background-position: center center;
 	transition: all .5s cubic-bezier(0.15, 0.6, 0.51, 0.93);
 }
 
 .categoryListCustom .categories li:hover figure {
-	background-size: auto 108%;
+	background-size: 108% auto;
 }
 
 .categoryListCustom .panel-heading {
