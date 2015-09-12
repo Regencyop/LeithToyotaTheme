@@ -15,21 +15,13 @@
 		        rewindNav: true
 			});
 			
-			//Mobile Menu Toggle
-			$('.mobile-nav-toggle').click(function(){
-				
-				$(this).toggleClass('active');
-				$('.mobile-menu-wrap').slideToggle(300);
-				
-			});
-			
 		});	
 	
 	</script>
 	
 	<h1 style="position: fixed; top: 0; left: 0; z-index: 2000;"> {{ currentCategory.SubCategories.length }} </h1>
 	
-	<div class="container-fluid" style="padding: 0;">
+	<div class="container-fluid" style="padding: 0;" ng-show=" !currentCategory.SubCategories.length == 0 ">
 	
 		<div class="owl-carousel homeboxes">
 			
