@@ -9,7 +9,7 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 		if(d) return $sce.trustAsHtml(d);
 	}
 	
-	console.log($scope);
+	
 	
 	function _search() {
 		$scope.searchLoading = true;
