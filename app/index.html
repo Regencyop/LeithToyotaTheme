@@ -41,8 +41,6 @@
 				        	
 				        </div><!--col-->
 				        
-				        
-				        
 				        <!-- Toggle Mobile Menu -->
 				        <button 
 				        	type="button"
@@ -69,7 +67,7 @@
 	            
             </header>
 	        
-	        <div class="container-fluid" ng-class="{'active':  current.InteropID == node.InteropID}" style="padding: 0;" >
+	        <div class="container-fluid" style="padding: 0;" >
 	        
 	        	<div class="owl-carousel homeboxes">
 	        		
@@ -88,8 +86,6 @@
 	        		
 	        </div><!--container-fluid-->
 	        
-	        
-	        
 	        <section class="container">
 				<ng-view autoscroll />
 	        </section>
@@ -97,10 +93,6 @@
 	        <section class="hidden-print">
 	            <copyright ng-if="!user.Permissions.contains('UnBrandedSite')" />
 	        </section>
-	        
-	        <h1>{{ $scope.id }}
-	        
-	        {{ $scope.$id }}</h1>
 	        
 	    </section><!--content-->
 	        
