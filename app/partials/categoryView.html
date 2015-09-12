@@ -30,7 +30,11 @@
         </div>
     </aside>
     <div class="col-collapse">
-
+		
+		<h1>{{ $scope.id }}
+		
+		{{ $scope.$id }}</h1>
+		
         <categorylistview></categorylistview>
 
 		<loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}"/>

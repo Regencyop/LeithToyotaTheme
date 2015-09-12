@@ -10,7 +10,7 @@ function ($scope, $route, $location, $451, Punchout, User, Order, Security, Orde
 		});
 	}
 	
-	console.log($scope);
+	
 	
 	// fix Bootstrap fixed-top and fixed-bottom from jumping around on mobile input when virtual keyboard appears
 	if ($(window).width() < 960) {
@@ -95,4 +95,7 @@ function ($scope, $route, $location, $451, Punchout, User, Order, Security, Orde
 	});
 	$scope.$on("$routeChangeSuccess", init);
     $scope.$on('event:auth-loginRequired', cleanup);
+    
+    console.log($scope);
+    
 }]);
