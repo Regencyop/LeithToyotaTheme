@@ -41,9 +41,7 @@
 				        	
 				        </div><!--col-->
 				        
-				        {{ $scope.id }}
 				        
-				        {{ $scope.$id }}
 				        
 				        <!-- Toggle Mobile Menu -->
 				        <button 
@@ -90,6 +88,8 @@
 	        		
 	        </div><!--container-fluid-->
 	        
+	        
+	        
 	        <section class="container">
 				<ng-view autoscroll />
 	        </section>
@@ -97,6 +97,10 @@
 	        <section class="hidden-print">
 	            <copyright ng-if="!user.Permissions.contains('UnBrandedSite')" />
 	        </section>
+	        
+	        <h1>{{ $scope.id }}
+	        
+	        {{ $scope.$id }}</h1>
 	        
 	    </section><!--content-->
 	        
