@@ -26,7 +26,9 @@ $(document).ready(function() {
 // Sizing Event Listeners ////////////////////////////////////////////////////////////////////////////////////
 
 function adaptSizing() {
-
+	
+	console.log("yep");
+	
 	// Adds margin to top to accomodate fixed header
 	var headerHeight = $('.navbar-fixed-top').height();
 	var owlCarousel = $('.owl-carousel.homeboxes').length;
