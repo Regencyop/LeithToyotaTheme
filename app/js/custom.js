@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 // Sizing Event Listeners ////////////////////////////////////////////////////////////////////////////////////
 
-function adaptSizing() {
+/*function adaptSizing() {
 
 	// Adds margin to top to accomodate fixed header
 	var headerHeight = $('.navbar-fixed-top').height();
@@ -37,7 +37,7 @@ function adaptSizing() {
 	
 }
 $(window).load(adaptSizing);
-$(window).resize(adaptSizing);
+$(window).resize(adaptSizing);*/
 
 
 // Window Scroll ///////////////////////////////////////////////////////////////////////////////////////////////
