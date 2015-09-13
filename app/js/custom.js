@@ -29,11 +29,7 @@ function adaptSizing() {
 	
 	// Adds margin to top to accomodate fixed header
 	var headerHeight = $('.navbar-fixed-top').height();
-	var owlCarousel = $('.owl-carousel.homeboxes').length;
-	
-	if ( owlCarousel > 0 ) {
-		$('.carousel-wrap').css("margin-top", headerHeight);
-	} 
+	$('.carousel-wrap').css("margin-top", headerHeight);
 	
 }
 $(window).load(adaptSizing);
