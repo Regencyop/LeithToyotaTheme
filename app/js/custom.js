@@ -28,10 +28,12 @@ $(document).ready(function() {
 function adaptSizing() {
 	
 	// Adds margin to top to accomodate fixed header
-	var headerHeight = $('header').find('.logo').height();
+	var headerHeight = $('.navbar-fixed-top').height();
 	var owlCarousel = $('.owl-carousel.homeboxes').length;
 	
-	$('.owl-carousel.homeboxes').css("margin-top", headerHeight);
+	if ( owlCarousel > 0 ) {
+		$('.owl-carousel.homeboxes').css("margin-top", headerHeight);
+	} 
 	
 	console.log(headerHeight);
 	

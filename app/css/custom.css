@@ -62,8 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Header */
 
 header {
-	animation: none !important;
-	transition: none !important;
+	height: 200px;
 	position: relative;
 	z-index: 100;
 	background: #fff;
