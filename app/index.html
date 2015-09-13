@@ -24,9 +24,7 @@
     		var headerHeight = $('.navbar-fixed-top').height();
     		var owlCarousel = $('.owl-carousel.homeboxes').length;
     		
-    		if ( owlCarousel > 0 ) {
-    			$('.owl-carousel.homeboxes').delay(300).css("margin-top", headerHeight);
-    		} 
+    		$('.owl-carousel.homeboxes').css("margin-top", headerHeight);
     		
     	}
     	$(window).load(adaptSizing);
