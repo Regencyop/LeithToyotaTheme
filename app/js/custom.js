@@ -36,7 +36,7 @@ function adaptSizing() {
 	console.log(headerHeight);
 	
 }
-$(window).load(adaptSizing);
+$(window).bind("load", adaptSizing);
 $(window).resize(adaptSizing);
 
 
