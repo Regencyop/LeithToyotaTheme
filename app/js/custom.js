@@ -31,9 +31,7 @@ function adaptSizing() {
 	var headerHeight = $('.navbar-fixed-top').height();
 	var owlCarousel = $('.owl-carousel.homeboxes').length;
 	
-	if ( owlCarousel > 0 ) {
-		$('.owl-carousel.homeboxes').css("margin-top", headerHeight);
-	} 
+	$('.owl-carousel.homeboxes').css("margin-top", headerHeight);
 	
 	console.log(headerHeight);
 	
