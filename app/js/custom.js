@@ -23,19 +23,6 @@ $(document).ready(function() {
 });	
 
 
-// Sizing Event Listeners ////////////////////////////////////////////////////////////////////////////////////
-
-function adaptSizing() {
-	
-	// Adds margin to top to accomodate fixed header
-	var headerHeight = $('.navbar-fixed-top').height();
-	$('.carousel-wrap').css("margin-top", headerHeight);
-	
-}
-$(window).load(adaptSizing);
-$(window).resize(adaptSizing);
-
-
 // Window Scroll ///////////////////////////////////////////////////////////////////////////////////////////////
 
 $(window).scroll(function() {
