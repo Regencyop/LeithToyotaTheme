@@ -31,12 +31,12 @@ function adaptSizing() {
 	var headerHeight = $('.navbar-fixed-top').height();
 	var owlCarousel = $('.owl-carousel.homeboxes').length;
 	
-	$('.owl-carousel.homeboxes').css("margin-top", headerHeight);
-	
-	console.log(headerHeight);
+	if ( owlCarousel > 0 ) {
+		$('.carousel-wrap').css("margin-top", headerHeight);
+	} 
 	
 }
-$(window).bind("load", adaptSizing);
+$(window).load(adaptSizing);
 $(window).resize(adaptSizing);
 
 
