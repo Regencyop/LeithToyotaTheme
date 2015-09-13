@@ -16,22 +16,6 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/animate.min.css" />
     
-    <script>
-    	
-    	function adaptSizing() {
-    	
-    		// Adds margin to top to accomodate fixed header
-    		var headerHeight = $('.navbar-fixed-top').height();
-    		var owlCarousel = $('.owl-carousel.homeboxes').length;
-    		
-    		$('.owl-carousel.homeboxes').css("margin-top", headerHeight);
-    		
-    	}
-    	$(window).load(adaptSizing);
-    	$(window).resize(adaptSizing);
-    
-    </script>
-    
 </head>
 
 <body ng-cloak ng-class="ng-cloak">
