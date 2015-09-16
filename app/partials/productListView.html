@@ -1,8 +1,11 @@
 <div class="panel panel-default" ng-show="products">
-    <div class="panel-heading">
-        <h3 class="panel-title">
-            <p>yep 4</p>{{'Products' | r | xlat}}
-        </h3>
+    <div class="panel-heading subHeadText">
+    	<div class="container">
+	        <h3 class="panel-title">
+	            {{'Products' | r | xlat}}
+	        </h3>
+	        <h1> {{ currentCategory.SubCategories.length }} </h1>
+        </div>
     </div>
     <div ng-show="productCount > settings.pageSize">
         <pagination page="settings.currentPage" max-size="10" rotate="false" boundary-links="true" total-items="productCount"

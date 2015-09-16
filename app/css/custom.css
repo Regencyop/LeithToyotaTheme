@@ -357,6 +357,28 @@ aside.col-collapse { display: none !important; }
 	display: none;
 }
 
+/* Subpages */
+
+.panel-heading.subHeadText {
+	text-align: left;
+	background-color: transparent;
+	border: none;
+	padding: 35px 0;	
+}
+
+.panel-heading.subHeadText h3 {
+	text-align: left;
+	font-size: 1.2em;
+	color: #aaa;
+	padding: 0;	
+}
+
+.panel-heading.subHeadText h1 {
+	margin: .3em 0 0 0;
+	font-size: 2.5em;
+}
+
+
 
 /* Footer */
 
