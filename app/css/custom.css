@@ -386,6 +386,8 @@ footer {
 	
 	.categoryListCustom .panel-category-list { margin-top: 20px; }
 	
+	.subpageHeader { margin-top: 0; }
+	
 }
 
 @media only screen and (max-width: 767px) {
