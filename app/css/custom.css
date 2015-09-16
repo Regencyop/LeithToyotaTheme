@@ -366,14 +366,14 @@ aside.col-collapse { display: none !important; }
 	padding: 35px 0;	
 }
 
-.panel-heading.subHeadText .panel-title h3 {
+.panel-heading.subHeadText h3 {
 	text-align: left;
 	font-size: 1.2em;
 	color: #aaa;
 	padding: 0;	
 }
 
-.panel-heading.subHeadText .panel-title h1 {
+.panel-heading.subHeadText h1.panel-title {
 	margin: .3em 0 0 0;
 	font-size: 2.5em;
 }
