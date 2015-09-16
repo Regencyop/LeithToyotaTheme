@@ -83,7 +83,7 @@ header.shrink .main-nav > ul > li button.dropdown-toggle { padding: 6px 12px 16p
 
 header .logo {
 	display: table-cell;
-	height: 124px; /* Must match owl carousel margin-top and subpage header margin-top */
+	height: 124px; /* Must match owl carousel margin-top and subpageHeader margin-top */
 	vertical-align: middle;
 	margin: 20px 0 0 0;
 	position: relative;
@@ -253,6 +253,15 @@ header .main-nav > ul > li .open button.dropdown-toggle .caret { color: #fff; }
   background: #fff;
 }
 
+.subpageHeader {
+	margin-top: 124px; /* Must match logo wrapper height and owl carousel margin-top */
+}
+
+.subpageHeader img {
+	width: 100%;
+	height: auto;
+}
+
 nav#451qa_nav_hdr.nav { display: none !important; }
 
 /* Sidebar */
@@ -333,7 +342,7 @@ aside.col-collapse { display: none !important; }
 	height: 240px;
 	background-size: 100% auto;
 	background-position: center center;
-	transition: all .5s cubic-bezier(0.15, 0.6, 0.51, 0.93);
+	transition: all 1s cubic-bezier(0.67, 0.04, 0.42, 1.26);
 }
 
 .categoryListCustom .categories li:hover figure {
