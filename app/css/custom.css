@@ -48,7 +48,8 @@ Template: Howdy
 }
 
 body { 
-	background: #fff; 
+	background: #fff;
+	margin: 0 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -389,6 +390,8 @@ aside.col-collapse { display: none !important; }
 /* Footer */
 
 footer {
+	margin-top: 2em;
+	height: 110px;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,ffffff+43 */
 	background: #ededed; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ededed 0%, #ffffff 43%); /* FF3.6+ */
@@ -398,8 +401,16 @@ footer {
 	background: -ms-linear-gradient(top,  #ededed 0%,#ffffff 43%); /* IE10+ */
 	background: linear-gradient(to bottom,  #ededed 0%,#ffffff 43%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-	
 }
+
+footer p {
+	padding: 15px 0;
+    text-align: right;
+    color: #777;
+    font-size: .9em;
+}
+
+footer p a { color: #777; }
 
 
 
