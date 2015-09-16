@@ -62,7 +62,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Header */
 
 header {
-	height: 124px; /* Must match owl carousel height and subpage header margin */
 	position: relative;
 	z-index: 100;
 	background: #fff;
@@ -82,7 +81,10 @@ header.shrink .logo img {
 header.shrink .main-nav > ul > li > a,
 header.shrink .main-nav > ul > li button.dropdown-toggle { padding: 6px 12px 16px 12px; }
 
-header .logo { 
+header .logo {
+	display: table-cell;
+	height: 124px; /* Must match owl carousel margin-top and subpage header margin-top */
+	vertical-align: middle;
 	margin: 20px 0 0 0;
 	position: relative;
 	z-index: 10;
@@ -367,6 +369,8 @@ footer {
 @media only screen and (max-width: 992px) {
 	
 	header { position: relative !important; }
+	
+	header .logo { height: 104px; }
 	
 	.owl-carousel.homeboxes { margin-top: 0px !important; }
 	.owl-carousel.homeboxes .owl-controls { bottom: 20px; }
