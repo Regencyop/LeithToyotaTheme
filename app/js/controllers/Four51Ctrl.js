@@ -95,16 +95,19 @@ function ($scope, $route, $location, $451, Punchout, User, Order, Security, Orde
     $scope.$on('event:auth-loginRequired', cleanup);
     
     
-    //Owl Carousel Settings
-    $(".owl-carousel.homeboxes").owlCarousel({
-    	navigation: true, // Show next and prev buttons
-        slideSpeed: 300,
-        paginationSpeed: 400,
-        singleItem: true,
-        autoPlay: 5000,
-        stopOnHover: true,
-        rewindNav: true
-    });
-    
+    $(document).ready(function() { 
+    	
+    	//Owl Carousel Settings
+    	$(".owl-carousel.homeboxes").owlCarousel({
+    		navigation: true, // Show next and prev buttons
+    	    slideSpeed: 300,
+    	    paginationSpeed: 400,
+    	    singleItem: true,
+    	    autoPlay: 5000,
+    	    stopOnHover: true,
+    	    rewindNav: true
+    	});
+    	
+    });	
     
 }]);
