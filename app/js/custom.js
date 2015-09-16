@@ -12,6 +12,11 @@ $(document).ready(function() {
         rewindNav: true
 	});*/
 	
+	
+	$(".dropdown-menu a").click(function() {
+	   $(".mobile-nav-toggle").dropdown("toggle");
+	});
+	
 	//Mobile Menu Toggle
 	$('.mobile-nav-toggle').click(function(){
 		
