@@ -401,6 +401,7 @@ aside.col-collapse { display: none !important; }
 }
 
 .panel-primary .panel-heading .panel-title {
+	color: #fff !important;
 	background-color: #d41921 !important;
 }
 
