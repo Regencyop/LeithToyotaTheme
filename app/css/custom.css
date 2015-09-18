@@ -405,6 +405,11 @@ aside.col-collapse { display: none !important; }
 	background-color: #d41921 !important;
 }
 
+.panel-default .panel-heading .panel-title {
+	color: #444 !important;
+	background-color: #ddd !important;
+}
+
 .btn-info {
     border-color: #c50a12 !important;
     background-color: #c50a12 !important;
