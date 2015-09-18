@@ -404,6 +404,7 @@ aside.col-collapse { display: none !important; }
 	margin-top: 145px;
 }
 
+.headerMargin { margin-top: 85px; }
 
 
 /* Brand Color CSS */
@@ -484,6 +485,8 @@ footer p a { color: #777; }
 	.product-detail-default-image-right-accordion {
 		margin-top: 65px;
 	}
+	
+	.headerMargin { margin-top: 0; }
 	
 }
 
