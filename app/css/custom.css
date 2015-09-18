@@ -406,6 +406,8 @@ aside.col-collapse { display: none !important; }
 
 .headerMargin { margin-top: 135px; }
 
+.panel-search { margin-top: 155px; }
+
 
 /* Brand Color CSS */
 
@@ -491,6 +493,8 @@ footer p a { color: #777; }
 	}
 	
 	.headerMargin { margin-top: 0; }
+	
+	.panel-search { margin-top: 0; }
 	
 }
 
