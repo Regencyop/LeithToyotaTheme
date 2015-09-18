@@ -393,12 +393,16 @@ aside.col-collapse { display: none !important; }
     padding: 0;
     letter-spacing: 0;
     text-transform: none;
+    background: transparent !important;
 }
 
 .panel-product-list {
 	padding: 0;
 }
 
+.panel-primary .panel-heading .panel-title {
+	background-color: #d41921 !important;
+}
 
 
 /* Footer */
