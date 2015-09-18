@@ -91,8 +91,15 @@ header .logo a {
 }
 
 header .logo img {
-	width: auto;
+	/* 
+		Changes needed when adding a new logo
+		1. Change height and margin below to determine overall size of header 
+		2. Adjust the height and margin when the shrink class is added to the header
+		3. Adjust the margin-top added to owl carousel to accomodate the header space
+		4. Sizes change when the screen is less than 992px. Changes will need to be made in the media query below also. 
+	*/
 	height: 82px;
+	width: auto;
 	margin: 20px 0;
 	float: left;
 	transition: all .25s ease-in-out;
@@ -420,8 +427,8 @@ footer p a { color: #777; }
 	
 	header .logo img {
 	    width: auto;
-	    height: 72px;
-	    margin: 15px 0;
+	    height: 72px !important;
+	    margin: 15px 0 !important;
 	}
 	
 	header .main-nav > ul > li > a,
