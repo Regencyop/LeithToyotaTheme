@@ -72,11 +72,10 @@ header {
 }
 
 /* Header shrink class after scroll */
-header.shrink .logo { margin: 6px 0; }
-
 header.shrink .logo img {
-	width: 85%;
-	height: auto;
+	width: auto;
+    height: 70px;
+    margin: 6px 0 14px 0;
 }
 
 header.shrink .main-nav > ul > li > a,
@@ -92,9 +91,10 @@ header .logo {
 }
 
 header .logo img {
-	width: 100%;
-	height: auto;
-	min-width: 210px;
+	width: auto;
+	height: 82px;
+	margin: 20px 0;
+	float: left;
 	transition: all .25s ease-in-out;
 }
 
@@ -418,7 +418,14 @@ footer p a { color: #777; }
 	
 	header { position: relative !important; }
 	
-	header .logo { height: 104px; }
+	header .logo img {
+	    width: auto;
+	    height: 72px;
+	    margin: 15px 0;
+	}
+	
+	header .main-nav > ul > li > a,
+	header .main-nav > ul > li button.dropdown-toggle { padding: 6px 12px 16px 12px; }
 	
 	.owl-carousel.homeboxes { margin-top: 0px !important; }
 	.owl-carousel.homeboxes .owl-controls { bottom: 20px; }
