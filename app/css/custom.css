@@ -400,6 +400,20 @@ aside.col-collapse { display: none !important; }
 	padding: 0;
 }
 
+.panel-primary .panel-heading .panel-title {
+	color: #fff !important;
+	background-color: #d41921 !important;
+}
+
+.btn-info {
+    border-color: #c50a12 !important;
+    background-color: #c50a12 !important;
+}
+
+.text-info {
+    color: #d41921 !important;
+}
+
 
 /* Footer */
 
