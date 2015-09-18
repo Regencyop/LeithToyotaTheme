@@ -404,7 +404,7 @@ aside.col-collapse { display: none !important; }
 	margin-top: 145px;
 }
 
-.headerMargin { margin-top: 85px; }
+.headerMargin { margin-top: 135px; }
 
 
 /* Brand Color CSS */
@@ -424,15 +424,19 @@ aside.col-collapse { display: none !important; }
     background-color: #c50a12 !important;
 }
 
-.text-info,
-.btn-primary {
+.text-info {
     color: #d41921 !important;
     border-color: #d41921 !important;
 }
 
-.form-control:focus {
-	border-color: #c50a12 !important;
+.btn-primary {
+    color: #fff !important;
+    border-color: #d41921 !important;
 }
+
+.text-primary { color: #444 !important; }
+
+.form-control:focus { border-color: #c50a12 !important; }
 
 
 /* Footer */
