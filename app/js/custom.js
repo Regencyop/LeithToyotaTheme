@@ -12,11 +12,6 @@ $(document).ready(function() {
         rewindNav: true
 	});*/
 	
-	
-	$(".mobile-menu-wrap a").click(function() {
-	   $(".mobile-menu-wrap").hide();
-	});
-	
 	//Mobile Menu Toggle
 	$('.mobile-nav-toggle').click(function(){
 		
