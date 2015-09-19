@@ -1,8 +1,8 @@
 
 $(document).ready(function() { 
-	
+			
 	//Owl Carousel Settings
-	/*$(".owl-carousel.homeboxes").owlCarousel({
+	$(".owl-carousel.homeboxes").owlCarousel({
 		navigation: true, // Show next and prev buttons
         slideSpeed: 300,
         paginationSpeed: 400,
@@ -10,7 +10,7 @@ $(document).ready(function() {
         autoPlay: 5000,
         stopOnHover: true,
         rewindNav: true
-	});*/
+	});
 	
 	
 	$(".dropdown-menu a").click(function() {
