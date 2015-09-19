@@ -220,6 +220,8 @@ header .main-nav > ul > li .open button.dropdown-toggle .caret { color: #fff; }
 
 /* Carousel Images */
 
+.carousel-wrap { min-height: 230px; }
+
 .owl-carousel.homeboxes {
 	margin-top: 124px; /* Must match header height */
 }
@@ -513,6 +515,12 @@ footer p a { color: #777; }
 		display: table-cell;
 	    height: 104px;
 	    vertical-align: middle;
+	}
+	
+	header .logo img {
+	    width: auto;
+	    height: 52px !important;
+	    margin: 10px 0 !important;
 	}
 	
 	header .mobile-menu-wrap { 
