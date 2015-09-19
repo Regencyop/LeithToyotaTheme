@@ -14,7 +14,7 @@ $(document).ready(function() {
 	
 	
 	$(".mobile-menu-wrap a").click(function() {
-	   $(".mobile-menu-wrap").dropdown("toggle");
+	   $(".mobile-menu-wrap").hide();
 	});
 	
 	//Mobile Menu Toggle
