@@ -517,12 +517,6 @@ footer p a { color: #777; }
 	    vertical-align: middle;
 	}
 	
-	header .logo img {
-	    width: auto;
-	    height: 52px !important;
-	    margin: 10px 0 !important;
-	}
-	
 	header .mobile-menu-wrap { 
 		display: none;
 		font-family: 'Montserrat', sans-serif;
@@ -658,5 +652,11 @@ footer p a { color: #777; }
 	
 	header .logo,
 	header .mobile-nav-toggle { height: 74px; }
+	
+	header .logo img {
+	    width: auto;
+	    height: 52px !important;
+	    margin: 10px 0 !important;
+	}
 	
 }
