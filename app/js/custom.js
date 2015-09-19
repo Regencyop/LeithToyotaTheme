@@ -20,6 +20,14 @@ $(document).ready(function() {
 		
 	});
 	
+	//Mobile Menu Close on election
+	$('.mobile-menu-wrap a').click(function(){
+		
+		$('.mobile-nav-toggle').toggleClass('active');
+		$('.mobile-menu-wrap').slideToggle(300);
+		
+	});
+	
 });	
 
 
