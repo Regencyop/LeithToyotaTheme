@@ -13,8 +13,8 @@ $(document).ready(function() {
 	});*/
 	
 	
-	$(".dropdown-menu a").click(function() {
-	   $(".mobile-nav-toggle").dropdown("toggle");
+	$(".mobile-menu-wrap a").click(function() {
+	   $(".mobile-menu-wrap").dropdown("toggle");
 	});
 	
 	//Mobile Menu Toggle
