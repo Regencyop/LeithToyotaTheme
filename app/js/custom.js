@@ -20,11 +20,11 @@ $(document).ready(function() {
 		
 	});
 	
-	//Mobile Menu Close on election
-	$('.mobile-menu-wrap a').click(function(){
+	//Mobile Menu Close on selection
+	$('.mobile-menu-wrap').click(function(){
 		
 		$('.mobile-nav-toggle').toggleClass('active');
-		$('.mobile-menu-wrap').slideToggle(300);
+		$(this).slideToggle(300);
 		
 	});
 	
