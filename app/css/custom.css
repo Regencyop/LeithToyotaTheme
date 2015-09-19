@@ -123,7 +123,7 @@ header .navbar-nav>li>a .badge { background-color: red; }
 header .nav > li > a:hover,
 header .navbar-nav li.active > a,
 .nav > li > a:focus {
-	color: #777 !important;
+	color: #777;
 	background-color: transparent !important;
 }
 
@@ -617,7 +617,10 @@ footer p a { color: #777; }
 	
 	/* Mobile Sub Nav */
 	header nav.navbar ul { float: none !important; margin: 0 0 15px 0; }
-	header nav.navbar ul li a {
+	header nav.navbar ul li a,
+	header nav.navbar ul li a:hover,
+	header nav.navbar ul li a:active,
+	header nav.navbar ul li a:focus {
 		color: #fff !important;
 		font-size: 17px;
 		padding: .3em 20px !important;
