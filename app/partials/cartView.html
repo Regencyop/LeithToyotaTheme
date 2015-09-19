@@ -210,7 +210,7 @@
                     </ul>
                 </div>
 
-                <ul>
+                <ul class="clearfix">
                     <li>
                         <button type="button" class="btn btn-danger" ng-click="currentOrder.Status == 'AwaitingApproval' ? cancelEdit() : cancelOrder()">
                             <small ng-if="currentOrder.Status != 'AwaitingApproval'">{{('Cancel' | r) + ' ' + ('Order' | r) | xlat}}</small>

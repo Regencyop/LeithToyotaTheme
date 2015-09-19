@@ -408,6 +408,9 @@ aside.col-collapse { display: none !important; }
 
 .panel-search { margin-top: 155px; }
 
+.cartBtn ul li {
+	float: right;
+}
 
 /* Brand Color CSS */
 
