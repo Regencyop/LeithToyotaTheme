@@ -9,7 +9,14 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 		if(d) return $sce.trustAsHtml(d);
 	}
 	
-	alert("yep");
+	//Mobile Menu Close on selection
+	$('.mobile-menu-wrap').click(function(){
+		
+		$('.mobile-nav-toggle').toggleClass('active');
+		$(this).slideToggle(300);
+		console.log("close menu");
+		
+	});
 	
 	function _search() {
 		$scope.searchLoading = true;

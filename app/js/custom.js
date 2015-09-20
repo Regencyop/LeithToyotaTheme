@@ -20,13 +20,7 @@ $(document).ready(function() {
 		
 	});
 	
-	//Mobile Menu Close on selection
-	$('.mobile-menu-wrap').click(function(){
-		
-		$('.mobile-nav-toggle').toggleClass('active');
-		$(this).slideToggle(300);
-		
-	});
+	
 	
 });	
 
