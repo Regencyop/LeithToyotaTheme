@@ -10,10 +10,10 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 	}
 	
 	//Mobile Menu Close on selection
-	$('.mobile-menu-wrap').click(function(){
+	$('.mobile-menu-wrap a').click(function(){
 		
 		$('.mobile-nav-toggle').toggleClass('active');
-		$(this).slideToggle(300);
+		$('.mobile-menu-wrap').slideToggle(300);
 		console.log("close menu");
 		
 	});
