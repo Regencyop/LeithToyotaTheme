@@ -63,9 +63,9 @@
 	            
             </header>
 	        
-	        <!--<section class="container">-->
-				<ng-view autoscroll class="wow fadeInUp" />
-	        <!--</section>-->
+	        <section class="container wow fadeInUp">
+				<ng-view autoscroll />
+	        </section>
 	        
 	        <section class="hidden-print">
 	            <copyright ng-if="!user.Permissions.contains('UnBrandedSite')" />
