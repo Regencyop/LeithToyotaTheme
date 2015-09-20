@@ -9,14 +9,20 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 		if(d) return $sce.trustAsHtml(d);
 	}
 	
+	
 	//Mobile Menu Close on selection
-	$('.mobile-menu-wrap').click(function(){
-		
-		$('.mobile-nav-toggle').removeClass('active');
-		$('.mobile-menu-wrap').slideUp(300);
-		console.log("close menu");
-		
-	});
+	if ($('html').width() <= 778) { //This makes the menu close on dropdown a click
+		  
+		  $('.mobile-menu-wrap').click(function(){
+		  	
+		  	$('.mobile-nav-toggle').removeClass('active');
+		  	$('.mobile-menu-wrap').slideUp(300);
+		  	console.log("close menu");
+		  	
+		  });
+		  
+	} 
+	
 	
 	function _search() {
 		$scope.searchLoading = true;
