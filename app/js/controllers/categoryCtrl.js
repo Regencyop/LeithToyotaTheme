@@ -10,10 +10,10 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 	}
 	
 	//Mobile Menu Close on selection
-	$('.mobile-menu-wrap li').click(function(){
+	$('.mobile-menu-wrap a').click(function(){
 		
-		$('.mobile-nav-toggle').toggleClass('active');
-		$('.mobile-menu-wrap').slideToggle(300);
+		$('.mobile-nav-toggle').removeClass('active');
+		$('.mobile-menu-wrap').slideUp(300);
 		console.log("close menu");
 		
 	});
