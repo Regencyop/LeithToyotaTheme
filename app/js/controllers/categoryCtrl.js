@@ -9,6 +9,7 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 		if(d) return $sce.trustAsHtml(d);
 	}
 	
+	console.log($scope);
 	
 	//Mobile Menu Close on selection
 	if ($('html').width() <= 778) { //This makes the menu close on dropdown a click
