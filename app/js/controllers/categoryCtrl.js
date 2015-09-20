@@ -10,15 +10,14 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 	}
 	
 	//Mobile Menu Close on selection
-	$scope.closeMobileDropdown = function(){
+	$('.mobile-menu-wrap li').click(function(){
 		
 		$('.mobile-nav-toggle').toggleClass('active');
 		$('.mobile-menu-wrap').slideToggle(300);
 		console.log("close menu");
-	  	
-	};
-	
 		
+	});
+	
 	function _search() {
 		$scope.searchLoading = true;
 		Product.search($routeParams.categoryInteropID, null, null, function (products, count) {
