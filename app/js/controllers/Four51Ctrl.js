@@ -55,6 +55,7 @@ function ($scope, $route, $location, $451, Punchout, User, Order, Security, Orde
 	}
 	
 	console.log($scope);
+	alert("test");
 	
 	function analytics(id) {
 		if (id.length == 0) return;
