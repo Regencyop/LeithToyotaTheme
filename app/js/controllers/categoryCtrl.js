@@ -12,15 +12,11 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 	
 	//Mobile Menu Close on selection
 	if ($('html').width() <= 778) { //This makes the menu close on dropdown a click
-		  
-		  $('.mobile-menu-wrap').click(function(){
-		  	
+	  $('.mobile-menu-wrap').click(function(){
 		  	$('.mobile-nav-toggle').removeClass('active');
 		  	$('.mobile-menu-wrap').slideUp(300);
-		  	console.log("close menu");
-		  	
-		  });
-		  
+		  	//console.log("close menu");
+	  });
 	} 
 	
 	
