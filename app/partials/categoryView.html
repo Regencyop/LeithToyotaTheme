@@ -53,7 +53,7 @@
 		</div>
 	</div>
 	
-    <nav id="451qa_nav_hdr" class="nav wow fadeInUp" style="display: none;">
+    <nav id="451qa_nav_hdr" class="nav" style="display: none;">
         <ul>
             <li class="hidden-sm hidden-xs">
                 <span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i></span>
@@ -68,6 +68,7 @@
             </li>
         </ul>
     </nav>
+    
     <aside class="col-sm-3 col-collapse visible-md visible-lg" ng-if="navStatus.visible">
         <div class="panel panel-default panel-nav">
             <div class="panel-heading">
@@ -82,7 +83,8 @@
             </nav>
         </div>
     </aside>
-    <div class="col-collapse">
+    
+    <div class="col-collapse wow fadeInUp">
 		
         <categorylistview></categorylistview>
 
