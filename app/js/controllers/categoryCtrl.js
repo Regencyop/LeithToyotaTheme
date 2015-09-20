@@ -8,7 +8,9 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 	$scope.trusted = function(d){
 		if(d) return $sce.trustAsHtml(d);
 	}
-
+	
+	alert("yep");
+	
 	function _search() {
 		$scope.searchLoading = true;
 		Product.search($routeParams.categoryInteropID, null, null, function (products, count) {
