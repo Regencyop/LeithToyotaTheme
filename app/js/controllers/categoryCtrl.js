@@ -9,7 +9,6 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 		if(d) return $sce.trustAsHtml(d);
 	}
 	
-	console.log($scope);
 	console.log("yep");
 	
 	//Owl Carousel Settings
