@@ -10,6 +10,18 @@ function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
 	}
 	
 	console.log($scope);
+	console.log("yep");
+	
+	//Owl Carousel Settings
+	$(".owl-carousel.homeboxes").owlCarousel({
+		navigation: true, // Show next and prev buttons
+	    slideSpeed: 300,
+	    paginationSpeed: 400,
+	    singleItem: true,
+	    autoPlay: 5000,
+	    stopOnHover: true,
+	    rewindNav: true
+	});
 	
 	//Mobile Menu Close on selection
 	if ($('html').width() <= 778) { //This makes the menu close on dropdown a click

@@ -1,5 +1,33 @@
 <section class="categoryView">
 	
+	<!--<h1 style="position: fixed; top: 0; left: 0; z-index: 2000;"> {{ currentCategory.SubCategories.length }} </h1>-->
+	
+	<div class="container-fluid carousel-wrap wow fadeInUp" style="padding: 0;" >
+	
+		<div class="owl-carousel homeboxes">
+			
+			<div class="item">
+				<a href="/9876543/catalog/9876543-Apparel">
+					<img src="images/header---apparel.jpg">
+				</a>
+			</div>
+			
+			<div class="item">
+				<a href="/9876543/catalog/9876543-promo">
+					<img src="images/header---promo.jpg">
+				</a>
+			</div>
+			
+			<div class="item">
+				<a href="/9876543/catalog/9876543-Print">
+					<img src="images/header---print.jpg">
+				</a>
+			</div>
+			
+		</div><!--owl-carousel-->
+			
+	</div><!--container-fluid-->
+	
 	<div class="container-fluid wow fadeIn" ng-show=" currentCategory.SubCategories.length == 0 " style="padding: 0 !important;">
 		<div class="subpageHeader">
 			<img src="images/subhead.jpg" />
