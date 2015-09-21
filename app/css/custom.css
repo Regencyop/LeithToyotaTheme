@@ -454,7 +454,9 @@ aside.col-collapse { display: none !important; }
 
 footer {
 	margin-top: 2em;
-	height: 110px;
+	padding-top: 30px !important;
+	padding-bottom: 20px !important;
+	height: auto !important;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,ffffff+43 */
 	background: #ededed; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ededed 0%, #ffffff 43%); /* FF3.6+ */
