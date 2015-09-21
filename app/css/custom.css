@@ -220,10 +220,7 @@ header .main-nav > ul > li .open button.dropdown-toggle .caret { color: #fff; }
 
 /* Carousel Images */
 
-.carousel-wrap { 
-	display: none;
-	min-height: 230px;
-}
+.carousel-wrap { min-height: 230px; }
 
 .owl-carousel.homeboxes {
 	margin-top: 124px; /* Must match header height */
