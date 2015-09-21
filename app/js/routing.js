@@ -8,9 +8,7 @@ four51.app.config(['$routeProvider', '$locationProvider', function($routeProvide
 	var concatSpecFormView = function(routeParams){
 		return 'specform.hcf?id=' + routeParams.productInteropID;
 	}
-	
-	console.log(productInteropID);
-	
+
 	$routeProvider.
 		when('/listOrders', { templateUrl: 'partials/listOrders.html', controller: 'ListOrdersCtrl' }).
 		when('/orderdetails/:orderid', {templateUrl: 'partials/orderDetails.html', controller: 'OrderDetailsCtrl'}).
