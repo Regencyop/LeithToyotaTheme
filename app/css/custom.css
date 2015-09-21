@@ -221,7 +221,6 @@ header .main-nav > ul > li .open button.dropdown-toggle .caret { color: #fff; }
 /* Carousel Images */
 
 .carousel-wrap { 
-	display: none;
 	min-height: 230px;
 }
 
