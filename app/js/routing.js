@@ -8,7 +8,9 @@ four51.app.config(['$routeProvider', '$locationProvider', function($routeProvide
 	var concatSpecFormView = function(routeParams){
 		return 'specform.hcf?id=' + routeParams.productInteropID;
 	}
-
+	
+	console.log(productInteropID);
+	
 	$routeProvider.
 		when('/listOrders', { templateUrl: 'partials/listOrders.html', controller: 'ListOrdersCtrl' }).
 		when('/orderdetails/:orderid', {templateUrl: 'partials/orderDetails.html', controller: 'OrderDetailsCtrl'}).
@@ -40,9 +42,5 @@ four51.app.config(['$routeProvider', '$locationProvider', function($routeProvide
 		when('/reports', { templateUrl: 'partials/reportsView.html', controller: 'ReportsCtrl' }).
 		when('/report/:id', { templateUrl: 'partials/Reporting/reportView.html', controller: 'ReportCtrl' }).
 		when('/contactus/', { templateUrl: 'partials/Messages/contactus.html' }).
-		otherwise({redirectTo: '/catalog', controller: function() {
-		
-			alert("home");
-		
-		}});
+		otherwise({redirectTo: '/catalog'});
 }]);
