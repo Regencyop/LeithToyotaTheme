@@ -19,12 +19,6 @@ function ($scope, $sce, $route, $location, User) {
 		$scope.credentials.PasswordResetToken = $location.search().token;
 		$scope.PasswordReset ? _reset() : _login();
 	};
-	
-	$scope.newAlert = function() {
-		
-		console.log("alert");
-		
-	};
 
 	var _reset = function() {
 		User.reset($scope.credentials,
