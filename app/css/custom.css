@@ -494,6 +494,8 @@ footer p a { color: #777; }
 	header .main-nav > ul > li > a,
 	header .main-nav > ul > li button.dropdown-toggle { padding: 6px 12px 16px 12px; }
 	
+	.carousel-wrap { min-height: 0px !important; }
+	
 	.owl-carousel.homeboxes { margin-top: 0px !important; }
 	.owl-carousel.homeboxes .owl-controls { bottom: 20px; }
 	
