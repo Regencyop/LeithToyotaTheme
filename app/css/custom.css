@@ -204,7 +204,7 @@ header .main-nav ul li .dropdown-menu ul li a:hover {
 
 /* Dropdown Products Menu Open */
 header .main-nav > ul > li .open button.dropdown-toggle {
-	color: #fff;
+	color: #fff !important;
 	background: #d41921; /* Old browsers */
 	background: -moz-linear-gradient(top,  #d41921 0%, #b4161b 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d41921), color-stop(100%,#b4161b)); /* Chrome,Safari4+ */
@@ -665,33 +665,6 @@ footer p a { color: #777; }
 	    margin: 10px 0 !important;
 	}
 	
-}
-
-
-
-
-
-header .main-nav > ul > li button.dropdown-toggle {
-	color: orange !important;
-}
-
-.panel-primary .panel-heading .panel-title {
-	background-color: orange !important;
-}
-
-.text-info {
-    color: orange !important;
-    border-color: orange !important;
-}
-
-.btn-primary {
-    background-color: orange !important;
-    border-color: orange !important;
-}
-
-.btn-info {
-    border-color: orange !important;
-    background-color: orange !important;
 }
 
 
