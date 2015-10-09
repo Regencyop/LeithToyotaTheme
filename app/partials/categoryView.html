@@ -3,28 +3,16 @@
 	<!--<h1 style="position: fixed; top: 0; left: 0; z-index: 2000;"> {{ currentCategory.SubCategories.length }} </h1>-->
 	
 	<script>
-	
-		$(document).ready(function() { 
-			
-			//Owl Carousel Settings
-			$(".owl-carousel.homeboxes").owlCarousel({
-				navigation: true, // Show next and prev buttons
-			    slideSpeed: 300,
-			    paginationSpeed: 400,
-			    singleItem: true,
-			    autoPlay: 5000,
-			    stopOnHover: true,
-			    rewindNav: true
-			});
-			
-		});
-		
+	    $(document).ready(function() {
+			//This is needed to properly display carousel on page refresh
+            setTimeout(runOwlCarousel, 300)
+        });
 	</script>
 	
-	<div class="container-fluid carousel-wrap wow fadeInUp" style="padding: 0 !important;" 
+	<div class="container-fluid carousel-wrap" style="padding: 0 !important;" 
 		ng-hide=" currentCategory.SubCategories.length == 0 "  >
 	
-		<div class="owl-carousel homeboxes">
+		<div class="owl-carousel homeboxes wow fadeInDown">
 			
 			<div class="item">
 				<a href="/9876543/catalog/9876543-Apparel">
