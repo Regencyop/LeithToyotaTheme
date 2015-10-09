@@ -135,6 +135,8 @@ header .main-nav {
 	font-family: 'Montserrat', sans-serif;
 }
 
+header .main-nav .dropdown.open { background-color: #c50a12; }
+
 header .main-nav > ul { float: right; }
 
 header .main-nav > ul > li { float: left; }
@@ -177,7 +179,7 @@ header .main-nav ul li .dropdown-menu {
     border-radius: 0;
 }
 
-header .main-nav ul li .dropdown-menu ul li { float: none; }
+header .main-nav ul li .dropdown-menu ul li { float: none; background-color: #c50a12; }
 header .main-nav ul li .dropdown-menu ul li a {
 	display: block;
 	padding: .5em 20px;
@@ -186,14 +188,13 @@ header .main-nav ul li .dropdown-menu ul li a {
 	font-size: 1.3em;
 	text-transform: uppercase;
 	text-decoration: none;
-	background: #d41921; /* Old browsers */
-	background: -moz-linear-gradient(top,  #d41921 0%, #b4161b 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d41921), color-stop(100%,#b4161b)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #d41921 0%,#b4161b 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d41921', endColorstr='#b4161b',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,0.2)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.2) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.2) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.2) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#33000000',GradientType=0 );
 }
 
 header .main-nav ul li .dropdown-menu ul li a:hover { 
@@ -204,15 +205,14 @@ header .main-nav ul li .dropdown-menu ul li a:hover {
 
 /* Dropdown Products Menu Open */
 header .main-nav > ul > li .open button.dropdown-toggle {
-	color: #fff !important;
-	background: #d41921; /* Old browsers */
-	background: -moz-linear-gradient(top,  #d41921 0%, #b4161b 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d41921), color-stop(100%,#b4161b)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #d41921 0%,#b4161b 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d41921', endColorstr='#b4161b',GradientType=0 ); /* IE6-9 */
+	color: #fff;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,0.2)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.2) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.2) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.2) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#33000000',GradientType=0 );
 }
 
 header .main-nav > ul > li .open button.dropdown-toggle .caret { color: #fff; }
@@ -336,14 +336,24 @@ aside.col-collapse { display: none !important; }
 	transition: all .25s ease-in-out;
 	text-transform: uppercase;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d41921+0,b4161b+100 */
-	background: #d41921; /* Old browsers */
-	background: -moz-linear-gradient(top,  #d41921 0%, #b4161b 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d41921), color-stop(100%,#b4161b)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #d41921 0%,#b4161b 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #d41921 0%,#b4161b 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d41921', endColorstr='#b4161b',GradientType=0 ); /* IE6-9 */
+	background: #d41921;
+}
+
+.categoryListCustom .categories li h5:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,0.2)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.2) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.2) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.2) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#33000000',GradientType=0 );
 }
 
 .categoryListCustom .categories li:hover h5 {
@@ -666,5 +676,29 @@ footer p a { color: #777; }
 	}
 	
 }
+
+
+
+/* Color overrides */
+
+header .main-nav > ul > li button.dropdown-toggle { color: #d41921; }
+
+.text-info {
+	color: #d41921 !important;
+}
+
+.text-info,
+.btn-primary,
+.btn-info {
+    border-color: #d41921 !important;
+}
+
+header .main-nav .dropdown.open,
+.panel-primary .panel-heading .panel-title,
+.btn-primary,
+.btn-info,
+header .main-nav ul li .dropdown-menu ul li,
+.categoryListCustom .categories li h5 { background-color: #d41921 !important; }
+
 
 
