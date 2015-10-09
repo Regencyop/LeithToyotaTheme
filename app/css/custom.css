@@ -666,3 +666,29 @@ footer p a { color: #777; }
 	}
 	
 }
+
+
+
+
+
+header .main-nav > ul > li button.dropdown-toggle {
+	color: orange !important;
+}
+
+.panel-primary .panel-heading .panel-title {
+	background-color: orange !important;
+}
+
+.text-info {
+    color: orange !important;
+    border-color: orange !important;
+}
+
+.btn-primary {
+    background-color: orange !important;
+    border-color: orange !important;
+}
+
+
+
+
