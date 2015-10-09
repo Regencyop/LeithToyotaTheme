@@ -680,15 +680,13 @@ header .main-nav > ul > li button.dropdown-toggle {
 }
 
 .text-info {
-    color: orange !important;
     border-color: orange !important;
+    background-color: orange !important;
 }
 
 .btn-primary {
     background-color: orange !important;
     border-color: orange !important;
 }
-
-
 
 
